@@ -8,11 +8,11 @@
 
 :root {
   --rem: 16px;
-  --font: sans-serif;
+  --font: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
 	--font-mono: 'Fira Mono', monospace;
-  --color: #000;
+  --color: #0d1117;
   --background: #fff;
-  --border-color: #2c2d2e;
+  --border-color: #30363d;
   --primary: #00bffc;
   --secondary: #000;
 }
@@ -38,6 +38,62 @@ a {
   color: var(--primary);
 }
 
+h6,
+h5,
+h4,
+h3,
+h2,
+h1 {
+  font-family: var(--font-header);
+  margin-top: 0;
+  margin-bottom: 2rem;
+  font-weight: 500;
+}
+
+h1 {
+  font-size: calc(1.375rem + 1.5vw);
+}
+@media (min-width: 1200px) {
+  h1 {
+    font-size: 3.5rem;
+  }
+}
+
+h2 {
+  font-size: calc(1.325rem + 0.9vw);
+}
+@media (min-width: 1200px) {
+  h2 {
+    font-size: 3rem;
+  }
+}
+
+h3 {
+  font-size: calc(1.3rem + 0.6vw);
+}
+@media (min-width: 1200px) {
+  h3 {
+    font-size: 1.75rem;
+  }
+}
+
+h4 {
+  font-size: calc(1.275rem + 0.3vw);
+}
+@media (min-width: 1200px) {
+  h4 {
+    font-size: 1.5rem;
+  }
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   :root {
     scroll-behavior: smooth;
@@ -46,7 +102,7 @@ a {
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --color: #fff;
+    --color: #fefefe;
     --background: #000;
   }
 }

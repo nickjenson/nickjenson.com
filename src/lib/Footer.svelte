@@ -10,5 +10,9 @@
     display: flex;
     justify-content: space-between;
     align-items: baseline;
+    width: 100vw;
+    border-top: 1px solid var(--border-color);
+    background-color: var(--background-color);
+    z-index: 2;
   }
 </style>
