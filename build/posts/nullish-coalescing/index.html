@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="manifest" crossorigin="use-credentials" href="/manifest.json" />
+    
+
+		
+
+		<link rel="modulepreload" href="/_app/start-9f295176.js">
+		<link rel="modulepreload" href="/_app/chunks/vendor-07557843.js">
+		<link rel="modulepreload" href="/_app/pages/__layout.svelte-9427948f.js">
+		<link rel="modulepreload" href="/_app/pages/posts/nullish-coalescing.md-5319770d.js">
+		<link rel="stylesheet" href="/_app/assets/start-61d1577b.css">
+		<link rel="stylesheet" href="/_app/assets/pages/__layout.svelte-3d5b94ad.css">
+
+		<script type="module">
+			import { start } from "/_app/start-9f295176.js";
+			start({
+				target: document.querySelector("#svelte"),
+				paths: {"base":"","assets":""},
+				session: {},
+				host: location.host,
+				route: true,
+				spa: false,
+				trailing_slash: "never",
+				hydrate: {
+					status: 200,
+					error: null,
+					nodes: [
+						import("/_app/pages/__layout.svelte-9427948f.js"),
+						import("/_app/pages/posts/nullish-coalescing.md-5319770d.js")
+					],
+					page: {
+						host: location.host, // TODO this is redundant
+						path: "/posts/nullish-coalescing",
+						query: new URLSearchParams(""),
+						params: {}
+					}
+				}
+			});
+		</script><script>
+			if ('serviceWorker' in navigator) {
+				navigator.serviceWorker.register('/service-worker.js');
+			}
+		</script>
+  </head>
+  <body>
+    <div id="svelte">
+
+
+<nav class="svelte-tp8a2"><a href="/" class="svelte-tp8a2">← Home</a>
+  <ul><li class="svelte-tp8a2"><a sveltekit:prefetch href="/about" class="svelte-tp8a2">About</a></li>
+    <li class="svelte-tp8a2"><a href="https://github.com/nickjenson" class="svelte-tp8a2">GitHub</a></li></ul>
+</nav>
+<main class="svelte-1yf8wm3"><p>The nullish coalescing operator <code>??</code> is an ES2020 feature that brings a new logical operator to JavaScript, and it works differently from its counterparts.</p>
+<p>In JavaScript, operators are evaluated from left to right and contain two arguments. If the first argument is sufficient to determine the outcome the second one is skipped. This is called short-circuit evaluation and the nullish coalescing <code>??</code> adds a third to a list of existing operators that have this feature: <code>&amp;&amp;</code> and <code>||</code>.</p>
+<h2>Definition</h2>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Nullish_coalescing_operator" rel="nofollow">The nullish coalescing operator (<code>??</code>)</a> is a logical operator that returns it’s right-hand side operand when its left-hand side operand is <code>null</code> or <code>undefined</code>, and otherwise returns its left-hand side operand.</p>
+<p>This operator is especially useful when we want  <em>falsy</em> values like <code>0</code> or <code>false</code> to be considered a valid value.</p>
+<h2>Syntax</h2>
+<pre class="language-undefined"><!-- HTML_TAG_START --><code class="language-undefined">value ?? defaultValue</code><!-- HTML_TAG_END --></pre>
+<pre class="language-undefined"><!-- HTML_TAG_START --><code class="language-undefined">const name == null ?? &#39;Jane Doe&#39;
+console.log(name); // =&gt; Jane Doe</code><!-- HTML_TAG_END --></pre>
+<p>This is different from the logical OR (<code>||</code>) operator, where any <em>falsy</em> value is not considered valid: <code>undefined</code>, <code>null</code>, <code>””</code>, <code>0</code>, <code>false</code>, or <code>NaN</code>. Below is a comparison of both:</p>
+<pre class="language-undefined"><!-- HTML_TAG_START --><code class="language-undefined">let name
+console.log(name ?? &#39;Jane&#39;) // =&gt; Jane
+console.log(name || &#39;Jane&#39;) // =&gt; Jane
+
+let name = null
+console.log(name ?? &#39;Jane&#39;) // =&gt; Jane
+console.log(name || &#39;Jane&#39;) // =&gt; Jane
+
+let name = NaN
+console.log(name ?? &#39;Jane&#39;) // =&gt; NaN
+console.log(name || &#39;Jane&#39;) // =&gt; Jane
+
+let name = 0
+console.log(name ?? &#39;Jane&#39;) // =&gt; 0
+console.log(name || &#39;Jane&#39;) // =&gt; Jane
+
+let name = false
+console.log(name ?? &#39;Jane&#39;) // =&gt; false
+console.log(name || &#39;Jane&#39;) // =&gt; Jane
+
+let name = &#39;&#39;
+console.log(name ?? &#39;Jane&#39;) // =&gt; &#39;&#39;
+console.log(name || &#39;Jane&#39;) // =&gt; Jane</code><!-- HTML_TAG_END --></pre>
+<h2>Chaining</h2>
+<p>Chaining is possible, but with this new operator it will require us to explicitly denote the order of evaluations; otherwise, we’ll get an error.</p>
+<pre class="language-undefined"><!-- HTML_TAG_START --><code class="language-undefined">const name = user.full_name || user.username ?? &#39;Jane Doe&#39; 
+// =&gt; SyntaxError
+const name = (user.full_name || user.username) ?? &#39;Jane Doe&#39; 
+// =&gt; Jane Doe</code><!-- HTML_TAG_END --></pre></main>
+<footer class="svelte-jfwutz"><div class="container svelte-jfwutz"><div class="color-scheme-toggle svelte-c78s96" role="radiogroup" tabindex="0" aria-label="Select a color scheme preference"><label data-color-scheme-option="light" class="svelte-c78s96"><input type="radio" name="themes" value="light" class="svelte-c78s96">
+			<div class="text svelte-c78s96">light</div>
+		</label><label data-color-scheme-option="dark" class="svelte-c78s96"><input type="radio" name="themes" value="dark" class="svelte-c78s96">
+			<div class="text svelte-c78s96">dark</div>
+		</label><label data-color-scheme-option="auto" class="svelte-c78s96"><input type="radio" name="themes" value="auto" class="svelte-c78s96">
+			<div class="text svelte-c78s96">auto</div>
+		</label>
+</div>
+    <small class="svelte-jfwutz">© 2020-2021 Nick Jenson</small></div>
+</footer>
+
+
+
+			
+		</div>
+  </body>
+</html>

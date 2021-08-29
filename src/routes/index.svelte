@@ -1,3 +1,25 @@
+<script context="module">
+  /**
+   * @type {import('@sveltejs/kit').Load}
+   */
+  export async function load({ fetch }) {
+    const url = `./index.json`;
+    const response = await fetch(url);
+    if (response.ok) {
+      const { posts } = await response.json();
+      return {
+        props: { posts },
+      };
+    }
+    return {};
+  }
+</script>
+
+<script>
+  import ContentLink from '$lib/components/ContentLink.svelte';
+  export let posts;
+</script>
+
 <section>
 	<div id="intro">
 		<h1>Nick Jenson</h1>
@@ -8,6 +30,7 @@
 	</div>
 	<div id="content">
 		<h3>Articles</h3>
+    <ContentLink {posts} />
 		<h3>Demos</h3>
 	</div>
 </section>
@@ -15,7 +38,6 @@
 <style>
 	section {
 		display: grid;
-		grid-gap: 3rem;
 	}
 
 	h3 {
@@ -32,14 +54,13 @@
 
 	@media screen and (min-width: 1200px) {
 		section {
-			height: calc(100vh - (52px + 48px));
+			height: calc(100vh - (82px + 52px));
       grid-row: 1;
 		}
 
 		#intro {
 			grid-column: 1;
 			grid-row: 1;
-			border-right: 1px solid var(--border-color);
 		}
 
 		#content {
@@ -50,3 +71,4 @@
 		}
 	}
 </style>
+
