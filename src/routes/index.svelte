@@ -54,7 +54,7 @@
 
 	@media screen and (min-width: 1200px) {
 		section {
-			height: calc(100vh - (82px + 52px));
+			height: calc(100vh - (59px + 51px));
       grid-row: 1;
 		}
 

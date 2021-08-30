@@ -3,7 +3,7 @@
 </script>
 
 <footer>
-  <small>&copy; 2020-{new Date().getFullYear()} Nick Jenson</small>
+  <small>&copy; 2020-{new Date().getFullYear()}</small>
   <ThemeToggle />
 </footer>
 
