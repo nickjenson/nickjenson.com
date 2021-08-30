@@ -21,20 +21,16 @@
   section:not(:last-child) {
     border-bottom: solid 1px var(--border-color);
   }
-
-
   a {
     color: inherit;
     text-decoration: none;
   }
-  
   .titlebar {
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-
   h3 {
     font-size: 1rem;
     margin-bottom: 0;
