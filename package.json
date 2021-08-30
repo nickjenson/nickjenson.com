@@ -48,6 +48,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"feather-icons": "^4.28.0",
 		"front-matter": "^4.0.2"
 	}
 }
