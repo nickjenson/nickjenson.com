@@ -3,7 +3,6 @@
 </script>
 
 <footer>
-  <small>&copy; 2020-{new Date().getFullYear()}</small>
   <ThemeToggle />
 </footer>
 
@@ -15,12 +14,9 @@
     width: 100%;
     padding: 1rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     width: 100vw;
     background-color: var(--background-color);
     z-index: 2;
-  }
-  small {
-    margin-top: .5rem;
   }
 </style>
