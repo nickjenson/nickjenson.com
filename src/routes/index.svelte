@@ -46,16 +46,22 @@
     height: 8rem;
   }
 	section {
-		display: grid;
+		display: flex;
+    flex-wrap: wrap;
 	}
 
 	h3 {
     margin-bottom: 0.5rem;
 		border-bottom: 1px solid var(--border-color);
 	}
-
-	#intro {
-		text-align: center;
+  #intro {
+   text-align: center; 
+  }
+  #content {
+    padding: 2rem 0;
+  }
+	#intro, #content {
+    width: 100%;
 	}
 
 	@media screen and (min-width: 1200px) {
@@ -63,17 +69,8 @@
 			height: calc(100vh - (59px + 51px));
       grid-row: 1;
 		}
-
-		#intro {
-			grid-column: 1;
-			grid-row: 1;
-		}
-
-		#content {
-			grid-column: 2 / 6;
-			grid-row: 1;
-			text-align: left;
-      padding: 2rem 3rem 2rem 0;
+		#intro, #content {
+			width: 50%;
 		}
     img {
       height: 14rem;
