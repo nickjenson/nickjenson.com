@@ -6,18 +6,22 @@
   <a href={'/posts/' + post.slug.split('.')[0]}>
     <section>
       <div class=titlebar>
-        <h4>{post.title}</h4>
-        <span>{post.published.split('T')[0]}</span>
+        <h3>{post.title}</h3>
+        <small>{post.published.split('T')[0]}</small>
       </div>
-      <p>{post.description}</p>
+      <small>{post.description}</small>
     </section>
   </a>
 {/each}
 
 <style>
   section {
+    margin-bottom: 0.5rem;
+  }
+  section:not(:last-child) {
     border-bottom: solid 1px var(--border-color);
   }
+
 
   a {
     color: inherit;
@@ -25,21 +29,14 @@
   }
   
   .titlebar {
-    margin-top: .5rem;
     width: 100%;
-    display: grid;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
   }
 
-  span {
-    grid-column: 4;
-		grid-row: 1;
-    text-align: right;
-  }
-
-  h4 {
-    grid-column: 1/3;
-		grid-row: 1;
+  h3 {
+    font-size: 1rem;
     margin-bottom: 0;
     padding: 0;
   }

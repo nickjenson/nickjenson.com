@@ -41,16 +41,13 @@
 	}
 
 	h3 {
+    margin-bottom: 0.5rem;
 		border-bottom: 1px solid var(--border-color);
 	}
 
 	#intro {
 		text-align: center;
 	}
-
-  #intro, #content {
-    padding: 2rem;
-  }
 
 	@media screen and (min-width: 1200px) {
 		section {

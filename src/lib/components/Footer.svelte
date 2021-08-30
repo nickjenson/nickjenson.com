@@ -13,7 +13,7 @@
     position: absolute;
     bottom: 0;
     width: 100%;
-    padding: 1rem 1.5rem;
+    padding: 1rem;
     display: flex;
     justify-content: space-between;
     width: 100vw;
