@@ -5,13 +5,14 @@
 </script>
 
 <Navbar />
-<main>
-  <slot />
-</main>
+  <main>
+    <slot />
+  </main>
 <Footer />
 
 <style>
   main {
     padding: 0 1rem;
+    padding-bottom: 52px; /* footer height */
   }
 </style>
