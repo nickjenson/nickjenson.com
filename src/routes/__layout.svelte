@@ -12,7 +12,6 @@
 
 <style>
   main {
-    padding: 0 1rem;
-    padding-bottom: 52px; /* footer height */
+    padding: 1rem 1rem 3.25rem; /* 3.25rem is footer height */
   }
 </style>

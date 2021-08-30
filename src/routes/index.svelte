@@ -58,7 +58,7 @@
    text-align: center; 
   }
   #content {
-    padding: 2rem 0;
+    padding: 1rem 0;
   }
 	#intro, #content {
     width: 100%;
@@ -66,9 +66,13 @@
 
 	@media screen and (min-width: 1200px) {
 		section {
+      padding: 2rem;
 			height: calc(100vh - (59px + 51px));
       grid-row: 1;
 		}
+    #content {
+      padding: 2rem 0;
+    }
 		#intro, #content {
 			width: 50%;
 		}

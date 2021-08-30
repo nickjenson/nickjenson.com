@@ -1,12 +1,13 @@
 <script>
   import { page } from '$app/stores'
+  import Icon from './Icon.svelte'
 </script>
 
 <nav>
   <a class:home={$page.path === '/'} href="/">&larr; Home</a>
   <ul>
-    <li class:active={$page.path === '/about'}><a sveltekit:prefetch href="/about">About</a></li>
-    <li><a href="https://github.com/nickjenson">GitHub</a></li>
+    <!-- <li class:active={$page.path === '/about'}><a sveltekit:prefetch href="/about">About</a></li> -->
+    <li><a href="https://github.com/nickjenson"><Icon name="github" height=1.5rem width=1.5rem/></a></li>
   </ul>
 </nav>
 
