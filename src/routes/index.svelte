@@ -28,12 +28,13 @@
       <a href="https://www.instructure.com/canvas">Canvas LMS</a> @ 
       <a href="https://www.instructure.com/">Instructure</a>
 		</p>
-	</div>
-	<div id="content">
+    <div id="content">
 		<h3>Articles</h3>
     <ContentLink {posts} />
 		<!-- <h3>Demos</h3> -->
 	</div>
+	</div>
+
 </section>
 
 <style>
@@ -55,26 +56,24 @@
 		border-bottom: 1px solid var(--border-color);
 	}
   #intro {
-   text-align: center; 
+    width: 100vw;
+    text-align: center;
+    background-color: var(--background-dark-secondary);
   }
+
   #content {
-    padding: 1rem 0;
+    text-align: left;
   }
-	#intro, #content {
-    width: 100%;
-	}
 
 	@media screen and (min-width: 1200px) {
 		section {
-      padding: 2rem;
-			height: calc(100vh - (59px + 51px));
-      grid-row: 1;
+			height: calc(100vh - (59px + 55px));
 		}
     #content {
       padding: 6rem 0;
     }
-		#intro, #content {
-			width: 50%;
+		#content {
+      padding: 3rem 2rem;
 		}
     img {
       height: 14rem;

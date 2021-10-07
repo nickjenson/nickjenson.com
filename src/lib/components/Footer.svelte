@@ -8,7 +8,6 @@
 
 <style>
   footer {
-    background-color: var(--background-color);
     bottom: 0;
     display: flex;
     justify-content: end;

@@ -12,6 +12,11 @@
 
 <style>
   main {
-    padding: 3rem;
+    margin: 0 auto;
+  }
+  @media screen and (min-width: 1200px) {
+    main {
+      max-width: 60vw;
+    }
   }
 </style>
