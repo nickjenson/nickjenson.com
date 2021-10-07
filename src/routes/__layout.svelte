@@ -5,5 +5,13 @@
 </script>
 
 <Navbar />
- <slot />
+  <main>
+    <slot />
+  </main>
 <Footer />
+
+<style>
+  main {
+    padding: 3rem;
+  }
+</style>

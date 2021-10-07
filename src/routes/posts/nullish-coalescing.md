@@ -11,6 +11,7 @@ twitterImage: 'best-medium-format-camera-for-starting-out-twitter.jpg'
 categories: ''
 tags: ''
 ---
+# Nullish Coalescing Operator
 
 The nullish coalescing operator `??` is an ES2020 feature that brings a new logical operator to JavaScript, and it works differently from its counterparts.
 
@@ -22,17 +23,17 @@ In JavaScript, operators are evaluated from left to right and contain two argume
 This operator is especially useful when we want  _falsy_ values like `0` or `false` to be considered a valid value.
 
 ## Syntax
-```
+```javascript
 value ?? defaultValue
 ```
-```
+```javascript
 const name == null ?? 'Jane Doe'
 console.log(name); // => Jane Doe
 ```
 
 This is different from the logical OR (`||`) operator, where any _falsy_ value is not considered valid: `undefined`, `null`, `””`, `0`, `false`, or `NaN`. Below is a comparison of both:
 
-```
+```javascript
 let name
 console.log(name ?? 'Jane') // => Jane
 console.log(name || 'Jane') // => Jane
@@ -61,7 +62,7 @@ console.log(name || 'Jane') // => Jane
 ## Chaining
 Chaining is possible, but with this new operator it will require us to explicitly denote the order of evaluations; otherwise, we’ll get an error.
 
-```
+```javascript
 const name = user.full_name || user.username ?? 'Jane Doe' 
 // => SyntaxError
 const name = (user.full_name || user.username) ?? 'Jane Doe' 

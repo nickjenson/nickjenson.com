@@ -24,15 +24,15 @@
 	<div id="intro">
     <img src="/assets/images/memoji.png" alt="Nick as a Memoji character">
 		<h1>Nick Jenson</h1>
-		<p>
-			Sr Technical Consultant for <a href="https://www.instructure.com/canvas">Canvas LMS</a> @
-			<a href="https://www.instructure.com/">Instructure</a>
+		<p>Technical Consulting Team Lead for 
+      <a href="https://www.instructure.com/canvas">Canvas LMS</a> @ 
+      <a href="https://www.instructure.com/">Instructure</a>
 		</p>
 	</div>
 	<div id="content">
 		<h3>Articles</h3>
     <ContentLink {posts} />
-		<h3>Demos</h3>
+		<!-- <h3>Demos</h3> -->
 	</div>
 </section>
 
@@ -71,7 +71,7 @@
       grid-row: 1;
 		}
     #content {
-      padding: 2rem 0;
+      padding: 6rem 0;
     }
 		#intro, #content {
 			width: 50%;

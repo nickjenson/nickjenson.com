@@ -8,15 +8,15 @@
 
 <style>
   footer {
-    height: 52px;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    padding: 1rem;
-    display: flex;
-    justify-content: flex-end;
-    width: 100vw;
     background-color: var(--background-color);
+    bottom: 0;
+    display: flex;
+    justify-content: end;
+    height: calc(23px + 2rem);
+    padding: 1rem;
+    position: absolute;
+    width: 100%;
+    width: 100vw;
     z-index: 2;
   }
 </style>
