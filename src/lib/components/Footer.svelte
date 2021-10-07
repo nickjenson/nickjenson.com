@@ -14,8 +14,7 @@
     height: calc(23px + 2rem);
     padding: 1rem;
     position: absolute;
-    width: 100%;
-    width: 100vw;
+    max-width: 100vw;
     z-index: 2;
   }
 </style>

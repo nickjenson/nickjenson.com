@@ -8,9 +8,9 @@
 	<ul>
 		<!-- <li class:active={$page.path === '/about'}><a sveltekit:prefetch href="/about">About</a></li> -->
 		<li>
-			<a href="https://github.com/nickjenson"
-				><Icon name="github" height="1.5rem" width="1.5rem" /></a
-			>
+			<a href="https://github.com/nickjenson">
+        <Icon name="github" height="1.5rem" width="1.5rem" />
+        </a>
 		</li>
 	</ul>
 </nav>
