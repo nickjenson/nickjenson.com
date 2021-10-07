@@ -4,21 +4,21 @@
 
 {#each posts as post}
   <a href={'/posts/' + post.slug.split('.')[0]}>
-    <section>
+    <div class=content-link>
       <div class=titlebar>
         <h3>{post.title}</h3>
         <small>{post.published.split('T')[0]}</small>
       </div>
       <small>{post.description}</small>
-    </section>
+    </div>
   </a>
 {/each}
 
 <style>
-  section {
+  .content-link {
     margin-bottom: 0.5rem;
   }
-  section:not(:last-child) {
+  .content-link:not(:last-child) {
     border-bottom: solid 1px var(--border-color);
   }
   a {

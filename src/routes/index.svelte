@@ -66,13 +66,7 @@
 
 	@media screen and (min-width: 1200px) {
 		section {
-			height: calc(100vh - (59px + 55px));
-		}
-    #content {
-      padding: 6rem 0;
-    }
-		#content {
-      padding: 3rem 2rem;
+			height: calc(100vh - (60px + 55px));
 		}
     img {
       height: 14rem;

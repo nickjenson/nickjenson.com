@@ -13,6 +13,7 @@
 <style>
   main {
     margin: 0 auto;
+    padding: 0 1rem 3rem;
   }
   @media screen and (min-width: 1200px) {
     main {

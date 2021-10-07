@@ -6,7 +6,6 @@
 
 :root {
 	--font-mono: 'Fira Mono', monospace;
-	--background-dark-secondary: #1d1d1f;
 	--background-dark: #1d1d1f;
 	--background-light: #fff;
 	--border-color: #30363d;
@@ -43,11 +42,13 @@ body {
 body.light {
 	color: var(--color-light);
 	background-color: var(--background-light);
+  --pre: #f5f5f7;
 }
 
 body.dark {
 	color: var(--color-dark);
 	background-color: var(--background-dark);
+  --pre: #2d2d2d;
 }
 
 a {
@@ -110,15 +111,15 @@ h6 {
 	font-size: 1rem;
 }
 
-
 pre,
 code {
+  background-color: var(--pre);
 	font-family: var(--font-mono);
-	background: var(--background-dark-secondary);
 	overflow-x: auto;
 }
 
 pre {
+
 	border-radius: 3px;
 	padding: 0.5rem;
 }
@@ -126,6 +127,16 @@ pre {
 pre > code {
 	padding: 0;
 }
+section {
+  height: calc(100vh - (60px + 55px));
+}
+
+@media screen and (min-width: 1200px) {
+  section {
+    height: calc(100vh - (60px + 55px));
+  }
+}
+
 @media (prefers-reduced-motion: no-preference) {
 	body {
 		scroll-behavior: smooth;
@@ -133,6 +144,9 @@ pre > code {
 }
 
 @media (prefers-color-scheme: light) {
+  :root {
+    --pre: #f5f5f7;
+  }
 	body {
 		color: var(--color-light);
 		background-color: var(--background-light);
@@ -140,6 +154,9 @@ pre > code {
 }
 
 @media (prefers-color-scheme: dark) {
+  :root {
+    --pre: #2d2d2d;
+  }
 	body {
 		color: var(--color-dark);
 		background-color: var(--background-dark);
