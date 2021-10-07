@@ -24,7 +24,7 @@
 		color: var(--color);
 	}
 	nav {
-		padding: 0 1.5rem;
+		padding: 0 1rem;
 		display: flex;
 		justify-content: space-between;
 		align-items: baseline;

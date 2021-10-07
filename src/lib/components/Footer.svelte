@@ -10,7 +10,7 @@
   footer {
     bottom: 0;
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     height: calc(23px + 2rem);
     padding: 1rem;
     position: absolute;
