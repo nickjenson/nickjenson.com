@@ -2,12 +2,6 @@
 title: Nullish Coalescing Operator
 published: 2020-11-07
 description: Familiarize yourself with the nullish coalescing operator
-focusKeyphrase: 'best medium format camera'
-featuredImage: 'best-medium-format-camera-for-starting-out.jpg'
-featuredImageAlt: 'Photograph of a Hasselblad medium format camera with the focusing screen exposed'
-ogImage: 'best-medium-format-camera-for-starting-out-open-graph.jpg'
-ogSquareImage: 'best-medium-format-camera-for-starting-out-open-graph-square.jpg'
-twitterImage: 'best-medium-format-camera-for-starting-out-twitter.jpg'
 categories: ''
 tags: ''
 ---
