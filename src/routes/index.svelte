@@ -24,7 +24,7 @@
 	<div id="intro">
     <img src="/assets/images/memoji.png" alt="Nick as a Memoji character">
 		<h1>Nick Jenson</h1>
-		<p>Technical Consulting Team Lead for 
+		<p>
       <a href="https://www.instructure.com/canvas">Canvas LMS</a> @ 
       <a href="https://www.instructure.com/">Instructure</a>
 		</p>
