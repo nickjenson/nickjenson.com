@@ -25,8 +25,7 @@
     <img src="/assets/images/memoji.png" alt="Nick as a Memoji character">
 		<h1>Nick Jenson</h1>
 		<p>
-      <a href="https://www.instructure.com/canvas">Canvas LMS</a> @ 
-      <a href="https://www.instructure.com/">Instructure</a>
+      <a href="https://www.instructure.com/canvas">Canvas LMS</a> @ Instructure
 		</p>
     <div id="content">
 		<h3>Articles</h3>
