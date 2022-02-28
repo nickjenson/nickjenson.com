@@ -1,0 +1,53 @@
+@import '_root.css';
+@import '_headers.css';
+@import '_prism.css';
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  position: relative;
+  font-family: var(--font);
+  color: var(--text);
+	background-color: var(--background);
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+body.light {
+	--text: var(--text-light);
+	--background: var(--bakcground-light);
+}
+
+a {
+	color: var(--accent);
+}
+
+section {
+  height: calc(100vh - (60px + 55px));
+}
+
+@media screen and (min-width: 1200px) {
+  section {
+    height: calc(100vh - (60px + 55px));
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+	body {
+		scroll-behavior: smooth;
+	}
+}
+
+@media (prefers-color-scheme: light) {
+	body {
+    --text: var(--text-light);
+    --background: var(--background-light);
+	}
+}

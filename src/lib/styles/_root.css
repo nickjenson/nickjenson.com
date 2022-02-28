@@ -1,0 +1,18 @@
+:root {
+  --text: #fefefe;
+  --background: #1d1d1f;
+  --border: #424245;
+
+  --text-light: #0d1117;
+  --background-light: #fff;
+  --border-light: #30363d;
+
+	--font: -apple-system, BlinkMacSystemFont, Helvetica Neue, sans-serif;
+  --font-mono: 'Fira Mono', monospace;
+
+	--accent: #00bffc;
+	--radius: 4px;
+
+  font-size: 1rem;
+  line-height: 1.2;
+}
