@@ -16,7 +16,7 @@
   import Footer from '$lib/components/Footer.svelte'
 </script>
 
-<Header />
+<Header sticky=true />
   <main>
     <slot />
   </main>
@@ -24,12 +24,15 @@
 
 <style>
   main {
-    margin: 0 auto;
+    max-width: 100vw;
+    margin: 3rem auto 0;
     padding: 0 1rem 3rem;
   }
+  
   @media screen and (min-width: 1200px) {
     main {
-      max-width: 60vw;
+      margin-top: 3.75rem;
+      max-width: var(--max-width);
     }
   }
 </style>

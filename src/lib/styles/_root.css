@@ -1,18 +1,28 @@
 :root {
   --text: #fefefe;
-  --background: #1d1d1f;
-  --border: #424245;
+  --background: #181818;
+  --border: #2a2a2a;
 
   --text-light: #0d1117;
   --background-light: #fff;
   --border-light: #30363d;
 
-	--font: -apple-system, BlinkMacSystemFont, Helvetica Neue, sans-serif;
+	--font: -apple-system, BlinkMacSystemFont,'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji','Segoe UI Symbol';
   --font-mono: 'Fira Mono', monospace;
 
-	--accent: #00bffc;
-	--radius: 4px;
+	--color-grey: #5d5d5d;
+  --accent: #00bffc;
+	--radius: .25rem;
+
+  --max-width: 86rem;
 
   font-size: 1rem;
   line-height: 1.2;
+  font-weight: 400;
+}
+
+@media screen and (min-width: 1200px) {
+  :root {
+    line-height: 1.6;
+  }
 }

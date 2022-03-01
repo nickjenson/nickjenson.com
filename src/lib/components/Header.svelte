@@ -1,44 +1,59 @@
 <script>
+  import Icon from '../components/Icon.svelte'
 	import { page } from '$app/stores';
+
+  export let sticky = false;
 </script>
 
-<nav>
-  <a class:home={$page.url.pathname === '/'} href="/">&larr; Home</a>
-  <ul>
-    <li>
-      <a href="/posts">Posts</a>
-    </li>
-    <li>
+<header class:sticky={sticky}>
+  <nav>
+    <div>
+      <a href="/">Home</a>
       <a href="/about">About</a>
-    </li>
-    <li>
-      <a href="/contact">Contact</a>
-    </li>
-  </ul>
-</nav>
+      <a href="/posts">Articles</a>
+      <a href="/#demos">Demos</a>
+    </div>
+    <div>
+      <a href="https://github.com/nickjenson">
+        <Icon name="github" /> follow on GitHub
+       </a>
+      <a href="/login">Login</a>
+    </div>
+  </nav>
+</header>
+
 
 
 <style>
- .home {
-		visibility: hidden;
-	}
+  .sticky {
+    position: fixed;
+    top: 0;
+  }
+
 	nav a {
 		text-decoration: none;
 		color: var(--color);
 	}
+
+  header {
+    z-index: 2;
+    width: 100vw;
+    border-bottom: solid 1px var(--border);
+    background-color: var(--background);
+  }
+
 	nav {
-		padding: 0 1rem;
+    padding: 1rem 0;
+    margin: 0 auto;
+    max-width: 100vw;
 		display: flex;
 		justify-content: space-between;
 		align-items: baseline;
-    border-bottom: solid 1px var(--border)
 	}
-	li {
-		position: relative;
-		display: inline-block;
-		list-style: none;
-	}
-	li:not(:last-of-type) {
-		margin-right: 0.25rem;
+
+  @media screen and (min-width: 1200px) {
+    nav {
+      max-width: var(--max-width);
+    }
 	}
 </style>
