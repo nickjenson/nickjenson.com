@@ -15,6 +15,7 @@
   import Icon from '../lib/components/Icon.svelte'
   import Articles from '../lib/components/Articles.svelte'
   export let posts;
+
 </script>
 
 
@@ -31,22 +32,11 @@
       Portland, OR</p>
 
   </div>
-  
-  <a class='button accent' href="/">Download Resume</a>
-  <a class='button' href="/"><Icon name='github' />GitHub</a>
 
   <div class='container'>
-    <small>powered by</small>
-    <img width='120' src="../../static/svelte-horizontal.svg" alt="">
-    <img src="../../static/full-logo-dark-simple.svg" alt="">
-    
-
+    <h2>Recent Articles</h2>
+    <Articles {posts} />
   </div>
-  
-
-	<h2>Recent Articles</h2>
-  <Articles {posts} />
-		
 </section>
 
 

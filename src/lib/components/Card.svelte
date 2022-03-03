@@ -10,7 +10,7 @@
 <div>
   <h4>
     <span class='icon'>
-      <Icon {name} stroke='#181818' />
+      <Icon {name} stroke='#181818' width='1rem' height='1rem'/>
     </span>
     {title}
   </h4>
@@ -20,13 +20,12 @@
 
 <style>
   div {
-    padding: 1rem;
-    border: 1px solid var(--border);
+    padding: 1.5rem;
     border-radius: var(--radius);
   }
 
   a {
-    color: inherit;
+    color: var(--color-grey);
     text-decoration: none;
   }
 
@@ -40,7 +39,6 @@
   }
 
   .icon {
-    padding: .4rem 0;
     border-radius: var(--radius);
     background-color: var(--text);
   }

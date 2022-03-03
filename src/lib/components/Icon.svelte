@@ -26,11 +26,11 @@
 
 <style>
   svg {
-    margin: 0 .5em;
+    margin: 0 .25em;
     width: 1em;
     height: 1em;
     overflow: visible;
-    vertical-align: sub;
+    vertical-align: baseline;
     transform-origin: 50% 50%;
   }
 </style>

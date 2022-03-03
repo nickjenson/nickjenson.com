@@ -11,8 +11,10 @@
 
 <style>
   div {
-    width: max-content;
-    display:flex;
-    justify-content: space-between;
-  }
+    display: grid;
+    grid-template-columns: repeat(4,minmax(0,1fr));
+    grid-column-gap: 6rem;
+    -moz-column-gap: 6rem;
+    column-gap: 6rem;
+    }
 </style>

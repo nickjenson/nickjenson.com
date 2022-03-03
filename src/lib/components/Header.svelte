@@ -1,7 +1,5 @@
 <script>
   import Icon from '../components/Icon.svelte'
-	import { page } from '$app/stores';
-
   export let sticky = false;
 </script>
 
@@ -17,7 +15,7 @@
       <a href="https://github.com/nickjenson">
         <Icon name="github" /> follow on GitHub
        </a>
-      <a href="/login">Login</a>
+      <a class="button" href="/login">Sign In</a>
     </div>
   </nav>
 </header>
@@ -31,9 +29,14 @@
   }
 
 	nav a {
+
 		text-decoration: none;
-		color: var(--color);
+		color: #eeeeee
 	}
+
+  nav a.button {
+    background-color: var(--color-dark-grey);
+  }
 
   header {
     z-index: 2;
