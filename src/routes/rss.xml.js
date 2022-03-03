@@ -26,19 +26,23 @@ export const get = async () => {
 };
 
 const render = (posts) =>
-  `<?xml version="1.0" encoding="UTF-8" ?>
+	`<?xml version="1.0" encoding="UTF-8" ?>
   <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
       <title>${title}</title>
       <description>${desc}</description>
       <link>${url}</link>
       <atom:link href="${url}/rss.xml" rel="self" type="application/rss+xml"/>
-        ${posts.map((post) => `<item>
+        ${posts
+					.map(
+						(post) => `<item>
           <guid isPermaLink="true">${url}/blog/${post.slug}</guid>
           <title>${post.title}</title>
           <link>${url}/blog/${post.slug}</link>
           <description>${post.description}</description>
           <pubDate>${new Date(post.date).toUTCString()}</pubDate>
-          </item>`).join('')}
+          </item>`
+					)
+					.join('')}
     </channel>
   </rss>`;

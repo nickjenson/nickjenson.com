@@ -1,64 +1,68 @@
-h1, h2, h3, h4, h5 {
-  font-weight: 400;
+h1,
+h2,
+h3,
+h4,
+h5 {
+	font-weight: 400;
 }
 
 h1 {
-  font-size: 2rem;
+	font-size: 2rem;
 }
 
 h2 {
-  font-size: 1.8rem;
+	font-size: 1.8rem;
 }
 
 h3 {
-  font-size: 1.6rem;
+	font-size: 1.6rem;
 }
 
 h4 {
-  font-size: 1.4rem;
+	font-size: 1.4rem;
 }
 
 h5 {
-  font-size: 1.2rem;
+	font-size: 1.2rem;
 }
 
 h6 {
-  font-size: 1.1rem;
+	font-size: 1.1rem;
 }
 
 p {
-  font-size: 1rem;
+	font-size: 1rem;
 }
 
 small {
-  display: block;
-  color: var(--color-grey);
+	display: block;
+	color: var(--color-grey);
 }
 
 :where(h2, h3, h4, h5, h6) .icon-link {
-  position: relative;
+	position: relative;
 }
 
 :where(h2, h3, h4, h5, h6) .icon-link::before {
-  content: '#';
-  position: absolute;
-  left: -1ch;
-  top: 0;
-  line-height: 1;
-  opacity: 0;
-  text-decoration: underline;
+	content: '#';
+	position: absolute;
+	left: -1ch;
+	top: 0;
+	line-height: 1;
+	opacity: 0;
+	text-decoration: underline;
 }
 
 :where(h2, h3, h4, h5, h6):hover .icon-link::before {
-   opacity: 1;
+	opacity: 1;
 }
 
 @media screen and (min-width: 1200px) {
-  h1 {
-    font-size: 2.75rem;
-    margin-top: 1.5rem;
-  }
-  p {
-    font-size: 1.125rem;
-  }
+	h1 {
+		font-size: 2.75rem;
+		margin-top: 1.5rem;
+	}
+	p {
+		font-size: 1.125rem;
+	}
 }

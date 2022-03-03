@@ -1,22 +1,24 @@
-button, .button {
-  border-radius: var(--radius);
-  color: var(--color);
-  transition-duration: .2s;
-  background-color: inherit;
-  text-decoration: none;
-  padding: 0.5rem 1rem;
-  font-weight: 500;
+button,
+.button {
+	border-radius: var(--radius);
+	color: var(--color);
+	transition-duration: 0.2s;
+	background-color: inherit;
+	text-decoration: none;
+	padding: 0.5rem 1rem;
+	font-weight: 500;
 }
 
- button:hover:not(.accent), .button:hover:not(.accent) {
-  background-color: var(--border);
+button:hover:not(.accent),
+.button:hover:not(.accent) {
+	background-color: var(--border);
 }
 
 .accent {
-  font-weight: 500;
-  background-color: var(--accent);
+	font-weight: 500;
+	background-color: var(--accent);
 }
 
 .accent:hover {
-  background-color: #00a6db;
+	background-color: #00a6db;
 }
