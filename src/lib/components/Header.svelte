@@ -15,7 +15,7 @@
 			<a href="https://github.com/nickjenson">
 				<Icon name="github" /> follow on GitHub
 			</a>
-			<a class="button" href="/login">Sign In</a>
+			<!-- <a class="button" href="#">Sign In</a> -->
 		</div>
 	</nav>
 </header>
