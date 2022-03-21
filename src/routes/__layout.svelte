@@ -14,13 +14,20 @@
 	import '$lib/styles/global.css';
 	import Header from '$lib/components/Header.svelte';
 	import Footer from '$lib/components/Footer.svelte';
+	import Sidebar from '$lib/components/Sidebar.svelte';
+
+	export let open;
 </script>
 
-<Header sticky="true" />
+<Header sticky="true" bind:open />
 <main>
 	<slot />
 </main>
 <Footer />
+
+{#if open}
+	<Sidebar />
+{/if}
 
 <style>
 	main {

@@ -40,6 +40,9 @@ section {
 	section {
 		height: calc(100vh - (60px + 55px));
 	}
+	.mobile {
+		display: none;
+	}
 }
 
 @media (prefers-reduced-motion: no-preference) {

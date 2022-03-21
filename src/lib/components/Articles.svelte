@@ -11,10 +11,19 @@
 
 <style>
 	div {
-		display: grid;
-		grid-template-columns: repeat(4, minmax(0, 1fr));
-		grid-column-gap: 6rem;
-		-moz-column-gap: 6rem;
-		column-gap: 6rem;
+		display: flex;
+		margin-right: -15px;
+		margin-left: -15px;
+		flex-flow: row wrap;
+	}
+
+
+	@media screen and (min-width: 1200px) {
+		div {
+			display: flex;
+			margin-right: -15px;
+			margin-left: -15px;
+			flex-flow: row wrap;
+		}
 	}
 </style>

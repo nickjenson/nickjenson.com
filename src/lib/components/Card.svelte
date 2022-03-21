@@ -42,4 +42,10 @@
 		border-radius: var(--radius);
 		background-color: var(--text);
 	}
+
+	@media screen and (min-width: 1200px) {
+		div {
+			padding: 1rem;
+		}
+	}
 </style>
