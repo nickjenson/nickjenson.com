@@ -1,7 +1,6 @@
 <script context="module">
 	export const load = ({ url }) => {
 		const path = url.pathname;
-
 		return {
 			props: {
 				path
@@ -14,31 +13,46 @@
 	import '$lib/styles/global.css';
 	import Header from '$lib/components/Header.svelte';
 	import Footer from '$lib/components/Footer.svelte';
-	import Sidebar from '$lib/components/Sidebar.svelte';
+	import ThemeToggle from '$lib/components/ThemeToggle.svelte';
+	import Link from '$lib/components/Link.svelte';
 
-	export let open;
+	let nav = [
+		{ title: 'Home', href: '/' },
+		{ title: 'About', href: '/about' },
+		{ title: 'Articles', href: '/posts' }
+	];
 </script>
 
-<Header sticky="true" bind:open />
+<Header --background="#181818" --color="#fefefe" sticky="true" hamburger="true" {nav}>
+	<Link href="/">
+		<div id="logo" />
+	</Link>
+	<span slot="utilities">
+		<ThemeToggle />
+		<Link button="true" href="https://github.com/nickjenson" icon="github" />
+		<Link button="true" href="/rss.xml" icon="rss" />
+	</span>
+</Header>
 <main>
 	<slot />
 </main>
 <Footer />
 
-{#if open}
-	<Sidebar />
-{/if}
-
 <style>
-	main {
-		max-width: 100vw;
-		margin: 3rem auto 0;
-		padding: 0 1rem 3rem;
+	#logo {
+		display: none;
+		color: var(--color);
+		text-decoration: none;
 	}
-
+	main {
+		margin: auto;
+		padding: 3rem 0;
+	}
 	@media screen and (min-width: 1200px) {
+		#logo {
+			display: block;
+		}
 		main {
-			margin-top: 3.75rem;
 			max-width: var(--max-width);
 		}
 	}

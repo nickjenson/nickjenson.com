@@ -20,6 +20,8 @@
 		"@sveltejs/kit": "next",
 		"@typescript-eslint/eslint-plugin": "^5.10.1",
 		"@typescript-eslint/parser": "^5.10.1",
+		"carbon-components-svelte": "^0.62.3",
+		"carbon-icons-svelte": "^11.0.0",
 		"eslint": "^7.32.0",
 		"eslint-config-prettier": "^8.3.0",
 		"eslint-plugin-svelte3": "^3.2.1",
@@ -37,7 +39,6 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"-": "^0.0.1",
 		"feather-icons": "^4.28.0",
 		"rehype-autolink-headings": "^6.1.1",
 		"rehype-slug": "^5.0.1"

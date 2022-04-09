@@ -1,7 +1,5 @@
 @import '_root.css';
-@import '_headers.css';
-@import '_button.css';
-@import '_utilities.css';
+@import '_typography.css';
 @import '_prism.css';
 
 *,
@@ -9,11 +7,14 @@
 *::after {
 	box-sizing: border-box;
 }
+html {
+	margin: 0;
+	height: 100vh;
+}
 
 body {
 	margin: 0;
-	padding: 0;
-	min-height: 100vh;
+	height: 100vh;
 	position: relative;
 	font-family: var(--font);
 	color: var(--text);
@@ -22,25 +23,75 @@ body {
 	-webkit-font-smoothing: antialiased;
 }
 
-body.light {
-	--text: var(--text-light);
-	--background: var(--bakcground-light);
+html[theme='dark'] {
+	--text: var(--dark-text);
+	--background: var(--dark-background);
+	--border: var(--dark-border);
 }
 
-a {
-	color: var(--accent);
-	margin: 0 0.5rem;
+html[theme='light'] {
+	--text: var(--light-text);
+	--background: var(--light-background);
+	--border: var(--light-border);
+}
+
+body.open {
+	overflow-y: hidden;
 }
 
 section {
 	height: calc(100vh - (60px + 55px));
 }
 
+button,
+a.button {
+	border: 1px solid transparent;
+	border-radius: var(--radius);
+	color: var(--color);
+	transition-duration: 0.2s;
+	background-color: inherit;
+	vertical-align: sub;
+	text-decoration: none;
+	padding: 0.5rem;
+	min-height: 2rem;
+}
+
+button:hover:not(.primary),
+a.button:hover:not(.primary) {
+	background-color: var(--border);
+}
+
+a {
+	color: var(--primary);
+}
+.primary {
+	font-weight: 500;
+	background-color: var(--accent);
+}
+
+.primary:hover {
+	background-color: #00a6db;
+}
+
+nav a.button,
+header button,
+header a.button {
+	height: 100%;
+	border-radius: 0;
+	display: inline-flex;
+	align-items: center;
+}
+
+a.button.primary {
+	font-weight: 500;
+	background-color: var(--primary);
+}
+
 @media screen and (min-width: 1200px) {
 	section {
 		height: calc(100vh - (60px + 55px));
 	}
-	.mobile {
+	.menu {
 		display: none;
 	}
 }
@@ -48,12 +99,5 @@ section {
 @media (prefers-reduced-motion: no-preference) {
 	body {
 		scroll-behavior: smooth;
-	}
-}
-
-@media (prefers-color-scheme: light) {
-	body {
-		--text: var(--text-light);
-		--background: var(--background-light);
 	}
 }

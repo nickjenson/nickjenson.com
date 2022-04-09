@@ -2,7 +2,6 @@
 	export const load = async ({ fetch }) => {
 		const posts = await fetch('/api/posts.json');
 		const allPosts = await posts.json();
-
 		return {
 			props: {
 				posts: allPosts
@@ -12,72 +11,53 @@
 </script>
 
 <script>
-	import Writer from '../lib/components/Writer.svelte';
-	import Icon from '../lib/components/Icon.svelte';
+	import Link from '../lib/components/Link.svelte';
+	import Enterprise from 'carbon-icons-svelte/lib/Enterprise.svelte';
+	import Location from 'carbon-icons-svelte/lib/Location.svelte';
 	import Articles from '../lib/components/Articles.svelte';
 	export let posts;
 </script>
 
 <section id="hero">
-	<div class="container">
+	<div>
 		<h1>Nick Jenson</h1>
-		<Writer />
-		<p>
-			<Icon name="briefcase" width="1.2em" height="1.2em" strokeWidth="1" />
-			Team Lead, Canvas LMS @ Instructure
-		</p>
-
-		<p>
-			<Icon name="map-pin" width="1.2em" height="1.2em" strokeWidth="1" />
-			Portland, OR
-		</p>
-
-		<div class="container">
-			
-				<a href="https://github.com/nickjenson" class="button accent">
-					<Icon name="github" />
-					Follow on GitHub
-				</a>
-				<a href="https://github.com/nickjenson/nickjenson.com" class="button">
-					<Icon name="code" />
-					View Source
-				</a>
-			</div>
-
-			
+		<p><Enterprise /> Team Lead, Canvas LMS @ Instructure</p>
+		<p><Location /> Portland, OR</p>
+		<div class="hero-buttons">
+			<Link button="true" primary="true" href="https://github.com/nickjenson" icon="github"
+				>follow on GitHub</Link
+			>
+			<Link button="true" href="https://github.com/nickjenson" icon="code">View Source</Link>
+		</div>
 	</div>
-
-</section>
-
-<section class="articles">
-	<h2>Recent Articles</h2>
-	<Articles {posts} />
-</section>
-
-
-<section id="demos">
-	<h2>Interactive Demos</h2>
+	<div>
+		<h2>Recent Articles</h2>
+		<Articles {posts} />
+	</div>
 </section>
 
 <style>
-	h1 {
-		margin-bottom: 0;
+	div > p {
+		margin: 0;
 	}
-
 	#hero {
-		padding: 4rem;
+		display: grid;
+		grid-auto-flow: column;
+		grid-auto-columns: 1fr;
+		padding: 3rem;
+		align-items: center;
+		justify-content: center;
+		flex-wrap: wrap;
 		margin: 0 auto;
+		height: fit-content;
 		border-bottom: none;
 	}
-
-	#hero p {
-		margin-block-start: 0.5em;
-		margin-block-end: 0.5em;
+	.hero-buttons {
+		padding: 1rem 0;
 	}
-
-	section {
-		padding: 2rem 0;
-		height: 80vh;
+	h2 {
+		text-align: right;
 		border-bottom: 1px solid var(--border);
+		margin-bottom: 0;
 	}
 </style>

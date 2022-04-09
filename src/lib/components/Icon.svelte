@@ -5,8 +5,8 @@
 	export let direction = 'n';
 	export let strokeWidth;
 	export let stroke;
-	export let width = '1em';
-	export let height = '1em';
+	export let width = '1rem';
+	export let height = '1rem';
 	$: icon = feather.icons[name];
 	$: rotation = directions.indexOf(direction) * 45;
 	$: if (icon) {
@@ -26,8 +26,6 @@
 <style>
 	svg {
 		margin: 0 0.25em;
-		width: 1em;
-		height: 1em;
 		overflow: visible;
 		vertical-align: baseline;
 		transform-origin: 50% 50%;

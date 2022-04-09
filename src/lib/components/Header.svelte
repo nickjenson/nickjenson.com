@@ -1,73 +1,69 @@
 <script>
-	import Icon from './Icon.svelte';
-
+	import Sidebar from './Sidebar.svelte';
+	import Button from './Button.svelte';
+	import Link from './Link.svelte';
+	export let nav = [];
+	export let hamburger = false;
 	export let sticky = false;
 	export let open = false;
 </script>
 
-<header class:sticky>
-	<nav>
-		<div class="mobile">
-			<button on:click={() => open = !open}>
-				<Icon name="menu" class="mobile"/>
-			</button>
-		</div>
-		<div id="menu">
-			<a href="/">Home</a>
-			<a href="/about">About</a>
-			<a href="/posts">Articles</a>
-			<a href="#demos">Demos</a>
-		</div>
+<div id="header" class:sticky>
+	<header>
+		{#if hamburger}
+			<Button class="menu" icon="menu" on:click={() => (open = !open)} />
+		{/if}
+		<slot />
 		<div>
-			<a href="https://github.com/nickjenson">
-				<Icon name="github" /> follow on GitHub
-			</a>
-			<!-- <a class="button" href="#">Sign In</a> -->
+			<nav>
+				{#each nav as link}
+					<Link button="true" href={link.href}>{link.title}</Link>
+				{/each}
+			</nav>
+			<slot name="utilities" />
 		</div>
-	</nav>
-</header>
+	</header>
+</div>
+
+{#if hamburger}
+	<Sidebar {nav} {open} />
+{/if}
 
 <style>
-	#menu {
-		display: none;
-	}
-
-	.sticky {
-		position: fixed;
-		top: 0;
-	}
-
-	nav a {
-		text-decoration: none;
-		color: #eeeeee;
-	}
-
-	button {
-		border: none;	
-	}
-
-	header {
-		z-index: 2;
-		width: 100vw;
+	#header {
+		display: flex;
+		justify-content: space-around;
 		border-bottom: solid 1px var(--border);
-		background-color: var(--background);
+		background: var(--background);
 	}
-
-	nav {
-		padding: 1rem;
-		margin: 0 auto;
-		max-width: 100vw;
+	header {
+		max-width: var(--max-width);
+		width: 100%;
+		height: var(--header-height);
 		display: flex;
 		justify-content: space-between;
-		align-items: baseline;
 	}
-
+	nav {
+		display: none;
+		align-items: center;
+		justify-content: center;
+	}
+	nav::after {
+		content: '';
+		width: 1px;
+		background: var(--border);
+	}
+	header div {
+		display: inline-flex;
+	}
+	.sticky {
+		position: sticky;
+		top: 0;
+		z-index: 9999;
+	}
 	@media screen and (min-width: 1200px) {
 		nav {
-			max-width: var(--max-width);
-		}
-		#menu {
-			display: block;
+			display: flex;
 		}
 	}
 </style>

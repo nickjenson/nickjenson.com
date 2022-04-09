@@ -7,31 +7,53 @@ h5 {
 }
 
 h1 {
-	font-size: 2rem;
+	font-size: 2em;
+	margin-bottom: 0.5em;
+}
+
+h1:not(:first-child) {
+	margin-top: 1em;
 }
 
 h2 {
-	font-size: 1.8rem;
+	font-size: 1.7818em;
+	margin-bottom: 0.5714em;
+}
+
+h2:not(:first-child) {
+	margin-top: 1.1428em;
 }
 
 h3 {
-	font-size: 1.6rem;
+	font-size: 1.5874em;
+	margin-bottom: 0.6666em;
+}
+
+h3:not(:first-child) {
+	margin-top: 1.3333em;
 }
 
 h4 {
-	font-size: 1.4rem;
+	font-size: 1.4142em;
+	margin-bottom: 0.8em;
 }
 
 h5 {
-	font-size: 1.2rem;
+	font-size: 1.12599em;
+	margin-bottom: 0.8888em;
 }
 
 h6 {
-	font-size: 1.1rem;
+	font-size: 1.1225em;
+	margin-bottom: 1em;
 }
 
 p {
-	font-size: 1rem;
+	font-size: 1em;
+}
+
+footer {
+	font-size: 0.8909em;
 }
 
 small {
@@ -59,10 +81,9 @@ small {
 
 @media screen and (min-width: 1200px) {
 	h1 {
-		font-size: 2.75rem;
-		margin-top: 1.5rem;
+		font-size: 2.4em;
 	}
 	p {
-		font-size: 1.125rem;
+		font-size: 1em;
 	}
 }
