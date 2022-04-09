@@ -11,18 +11,17 @@
 </script>
 
 <script>
-	import Link from '../lib/components/Link.svelte';
-	import Enterprise from 'carbon-icons-svelte/lib/Enterprise.svelte';
-	import Location from 'carbon-icons-svelte/lib/Location.svelte';
-	import Articles from '../lib/components/Articles.svelte';
+	import Icon from '$lib/components/Icon.svelte';
+	import Link from '$lib/components/Link.svelte';
+	import Articles from '$lib/components/Articles.svelte';
 	export let posts;
 </script>
 
 <section id="hero">
 	<div>
 		<h1>Nick Jenson</h1>
-		<p><Enterprise /> Team Lead, Canvas LMS @ Instructure</p>
-		<p><Location /> Portland, OR</p>
+		<p><Icon name="breifcase" /> Team Lead, Canvas LMS @ Instructure</p>
+		<p><Icon name="pin" /> Portland, OR</p>
 		<div class="hero-buttons">
 			<Link button="true" primary="true" href="https://github.com/nickjenson" icon="github"
 				>follow on GitHub</Link
