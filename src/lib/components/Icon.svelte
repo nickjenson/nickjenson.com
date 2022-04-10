@@ -25,9 +25,9 @@
 
 <style>
 	svg {
+		top: .125em;
+		position: relative;
 		margin: 0 0.25em;
 		overflow: visible;
-		vertical-align: baseline;
-		transform-origin: 50% 50%;
 	}
 </style>

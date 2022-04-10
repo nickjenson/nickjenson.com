@@ -1,6 +1,6 @@
 <img src="/images/memoji.png" alt="Nick Memoji" />
 
-<p>Hi, I’m Nick!</p>
+<h3>Hi, I’m Nick!</h3>
 <p>
 	I lead a team of consultants at Instructure that provide technical expertise for Canvas LMS. This
 	includes stuff like API usage, IdP configuration, data integrations, customized branding and more.

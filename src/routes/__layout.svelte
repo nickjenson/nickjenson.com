@@ -15,7 +15,7 @@
 	import Footer from '$lib/components/Footer.svelte';
 	import ThemeToggle from '$lib/components/ThemeToggle.svelte';
 	import Link from '$lib/components/Link.svelte';
-
+	let path;
 	let nav = [
 		{ title: 'Home', href: '/' },
 		{ title: 'About', href: '/about' },
@@ -46,13 +46,14 @@
 	}
 	main {
 		margin: auto;
-		padding: 3rem 0;
+		padding: 3rem 2rem;
 	}
 	@media screen and (min-width: 1200px) {
 		#logo {
 			display: block;
 		}
 		main {
+			padding: 3rem;
 			max-width: var(--max-width);
 		}
 	}

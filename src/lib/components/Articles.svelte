@@ -16,8 +16,10 @@
 {/each}
 
 <style>
-	.article:not(:first-of-type) {
-		padding: 0.5rem 0;
+	.article {
+		padding: 0.5rem;
+		border-radius: var(--radius);
+		margin: 0.5rem 0;
 	}
 	.titlebar {
 		display: flex;
@@ -33,6 +35,10 @@
 		padding-top: 0.25rem;
 		color: inherit;
 		text-decoration: none;
+	}
+	.article:hover {
+		background-color: var(--border);
+		cursor: pointer;
 	}
 	small.link {
 		color: var(--primary);

@@ -7,7 +7,7 @@
 	export let disabled = false;
 </script>
 
-<a class:button class:primary {href} {disabled}>
+<a on:click class:button class:primary {href} {disabled}>
 	<slot />
 	{#if icon}
 		<Icon name={icon} />

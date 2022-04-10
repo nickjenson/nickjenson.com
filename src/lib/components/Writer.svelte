@@ -1,15 +1,26 @@
 <script>
 	import Typewriter from 'svelte-typewriter';
+	let titles = ['Team lead', 'Consultant', 'Developer']
+
 </script>
 
-<h3>
-	<Typewriter loop={5000} cursor={'#fff'} interval={[50, 60, 80]}>
-		<span data-static>I am a</span>
-	</Typewriter>
-</h3>
+
+<div>
+	{#each titles as title, i}
+		<Typewriter scramble={2000} delay={i * 2000}>
+			<span>{title}</span>
+		</Typewriter>
+	{/each}
+</div>
+
 
 <style>
-	h3 {
-		margin-top: 0;
+	div {
+		display: inline-flex;
+	}
+	span {
+		margin:0;
+		padding-right: 0.25rem;
+		font-size: 1.2rem;
 	}
 </style>
