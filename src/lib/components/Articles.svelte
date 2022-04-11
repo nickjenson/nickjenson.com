@@ -37,7 +37,8 @@
 		text-decoration: none;
 	}
 	.article:hover {
-		background-color: var(--border);
+		transition-duration: 0.2s;
+		background-color: var(--hover);
 		cursor: pointer;
 	}
 	small.link {
