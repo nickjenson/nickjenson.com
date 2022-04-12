@@ -11,7 +11,7 @@
 		<h3>Menu</h3>
 		<ul>
 			{#each nav as link}
-				<li><Link on:click={() => open = !open} href={link.href}>{link.title}</Link></li>
+				<li><Link on:click={() => (open = !open)} href={link.href}>{link.title}</Link></li>
 			{/each}
 		</ul>
 	</nav>
@@ -23,7 +23,7 @@
 	}
 	li {
 		list-style: none;
-		margin: .25rem 0;
+		margin: 0.25rem 0;
 	}
 	aside {
 		z-index: 9999;

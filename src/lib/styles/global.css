@@ -79,7 +79,7 @@ header a.button {
 	height: 100%;
 	border-radius: 0;
 	display: inline-flex;
-  vertical-align: middle;
+	vertical-align: middle;
 }
 
 a.button.primary {

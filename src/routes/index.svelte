@@ -16,30 +16,19 @@
 	import Icon from '$lib/components/Icon.svelte';
 	import Link from '$lib/components/Link.svelte';
 	import Articles from '$lib/components/Articles.svelte';
-	import Writer from '$lib/components/Writer.svelte';
 	export let posts;
 </script>
 
 <section id="hero">
 	<div>
 		<h1>Nick Jenson</h1>
-		<Writer />
 		<p><Icon name="briefcase" /> Team Lead, Canvas LMS @ Instructure</p>
 		<p><Icon name="map-pin" /> Portland, OR</p>
 		<div class="hero-buttons">
-			<Link 
-				button="true" 
-				primary="true" 
-				href="https://github.com/nickjenson" 
-				icon="github">
+			<Link button="true" primary="true" href="https://github.com/nickjenson" icon="github">
 				Follow on GitHub
 			</Link>
-			<Link 
-				button="true" 
-				href="https://github.com/nickjenson" 
-				icon="code">
-				View Source
-			</Link>
+			<Link button="true" href="https://github.com/nickjenson" icon="code">View Source</Link>
 		</div>
 	</div>
 	<div>

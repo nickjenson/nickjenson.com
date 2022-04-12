@@ -25,7 +25,7 @@
 
 <style>
 	svg {
-		top: .125em;
+		top: 0.125em;
 		position: relative;
 		margin: 0 0.25em;
 		overflow: visible;

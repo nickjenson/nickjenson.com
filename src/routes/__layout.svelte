@@ -2,7 +2,7 @@
 	export const load = ({ url }) => {
 		return {
 			props: {
-				path: url.pathname 
+				path: url.pathname
 			}
 		};
 	};
@@ -15,20 +15,21 @@
 	import ThemeToggle from '$lib/components/ThemeToggle.svelte';
 	import Link from '$lib/components/Link.svelte';
 	let path;
-	console.info(path)
-	let nav = {'/': 'Home', '/about': 'About', '/posts': 'Articles'};
+	let nav = [
+		{ title: 'Home', href: '/' },
+		{ title: 'About', href: '/about' },
+		{ title: 'Articles', href: '/posts' }
+	];
 </script>
 
-<svelte:head>
-	{#if nav[path]}
+<!-- <svelte:head>
+	{#if nav[$page.pathname]}
 		<meta name="description" content="Software development portfolio and articles by Nick Jenson" />
 		<title>Nick Jenson | {nav[path]}</title>
 	{:else}
 		<title>Nick Jenson</title>
 	{/if}
-</svelte:head>
-
-
+</svelte:head> -->
 
 <Header --background="#181818" --color="#fefefe" sticky="true" hamburger="true" {nav}>
 	<Link href="/">
