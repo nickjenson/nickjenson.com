@@ -1,32 +1,19 @@
 <img src="/images/memoji.png" alt="Nick Memoji" />
 
 <h3>Hi, I’m Nick!</h3>
-<p>
-	I lead a team of consultants at Instructure that provide technical expertise for Canvas LMS. This
-	includes stuff like API usage, IdP configuration, data integrations, customized branding and more.
-</p>
-<p>I like building tools, solving problems and learning new things.</p>
-<p>
-	I started learning development through writing Ruby scripts and command line tools to make HTTP
-	requests or perform a task.
-</p>
-<p>
-	We also built an electron app to provide a UI to simplify data remapping and help make it more
-	accessible to other teams. It was later built directly into an internal data platform, not bad
-	…right?
-</p>
-<p>
-	I also built and maintain reactive browser extensions across department teams in Svelte.js to
-	perform functions and provide templates for an increasing number of web apps like JIRA and Asana.
-	It turns out a lot of time can be saved with just a few APIs.
-</p>
-<p>In my spare time I read, build, and tinker a lot with software. It’s fun …why not?</p>
-<h4>tl;dr</h4>
-<p>
-	I enjoy the thrill of solving a difficult or unfamiliar problem, learning something new, or
-	simplifying a task.
-</p>
-<p>But also food.</p>
+<p>I lead a team of consultants at Instructure where we provide clients and developers expertise on technical aspects of implementation for Canvas LMS. This includes SIS data integrations, branding customization, and authentication troubleshooting.</p>
+
+<p>I like building tools, solving problems and learning new things.
+I started learning software development through writing Ruby scripts and command-line tools to make HTTP requests or perform a task.</p>
+
+<p>I later built an Electron app designed to simplify SIS data conversions and make them more accessible to non-technical teams. It was later built directly into an internal data platform, not bad…right?</p>
+
+<p>I also built and maintain a reactive browser extension in Svelte that performs tasks across multiple web-apps to help automate and simplify technical tasks. It turns out a lot of time can be with the right APIs.</p>
+
+<p>In my spare time I read about, build, and mess around with software.</p>
+
+<h3>Tl;dr</h3>
+<p>I enjoy the thrill of solving difficult or unfamiliar problems, learning new things, or simplifying tasks. And also food.</p>
 
 <style>
 	img {
