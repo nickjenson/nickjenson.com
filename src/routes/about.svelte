@@ -8,11 +8,11 @@ I started learning software development through writing Ruby scripts and command
 
 <p>I later built an Electron app designed to simplify SIS data conversions and make them more accessible to non-technical teams. It was later built directly into an internal data platform, not bad…right?</p>
 
-<p>I also built and maintain a reactive browser extension in Svelte that performs tasks across multiple web-apps to help automate and simplify technical tasks. It turns out a lot of time can be with the right APIs.</p>
+<p>I also built and maintain a reactive browser extension in <a href="https://svelte.dev">Svelte</a> that performs tasks across multiple web-apps to help automate and simplify technical tasks. It turns out a lot of time can be with the right APIs.</p>
 
 <p>In my spare time I read about, build, and mess around with software.</p>
 
-<h3>Tl;dr</h3>
+<h3>tl;dr</h3>
 <p>I enjoy the thrill of solving difficult or unfamiliar problems, learning new things, or simplifying tasks. And also food.</p>
 
 <style>
