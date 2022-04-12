@@ -1,9 +1,8 @@
 <script context="module">
 	export const load = ({ url }) => {
-		const path = url.pathname;
 		return {
 			props: {
-				path
+				path: url.pathname 
 			}
 		};
 	};
@@ -16,12 +15,20 @@
 	import ThemeToggle from '$lib/components/ThemeToggle.svelte';
 	import Link from '$lib/components/Link.svelte';
 	let path;
-	let nav = [
-		{ title: 'Home', href: '/' },
-		{ title: 'About', href: '/about' },
-		{ title: 'Articles', href: '/posts' }
-	];
+	console.info(path)
+	let nav = {'/': 'Home', '/about': 'About', '/posts': 'Articles'};
 </script>
+
+<svelte:head>
+	{#if nav[path]}
+		<meta name="description" content="Software development portfolio and articles by Nick Jenson" />
+		<title>Nick Jenson | {nav[path]}</title>
+	{:else}
+		<title>Nick Jenson</title>
+	{/if}
+</svelte:head>
+
+
 
 <Header --background="#181818" --color="#fefefe" sticky="true" hamburger="true" {nav}>
 	<Link href="/">
@@ -39,11 +46,6 @@
 <Footer />
 
 <style>
-	#logo {
-		display: none;
-		color: var(--color);
-		text-decoration: none;
-	}
 	main {
 		margin: auto;
 		padding: 3rem 2rem;
