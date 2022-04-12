@@ -8,7 +8,12 @@ import rehypeAutolinkHeadings from 'rehype-autolink-headings';
  * restart dev server after making any config changes
  */
 const config = {
-	kit: { adapter: adapter() },
+	kit: { 
+		adapter: adapter(),
+		prerender: {
+			default: true
+		}
+	},
 	extensions: ['.svelte', '.md', '.svx', '.svelte.md'],
 	preprocess: [
 		mdsvex({
