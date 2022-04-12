@@ -3,7 +3,7 @@
 		const posts = await fetch('/api/posts.json');
 		const all = await posts.json();
 		const latest = all.slice(0, 3);
-		console.info(latest)
+
 		return {
 			props: {
 				posts: latest
