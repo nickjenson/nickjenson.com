@@ -49,7 +49,7 @@
 <style>
 	main {
 		margin: auto;
-		padding: 3rem 2rem;
+		padding: 2rem 1rem;
 	}
 	@media screen and (min-width: 1200px) {
 		#logo {
