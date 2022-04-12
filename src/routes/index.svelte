@@ -45,7 +45,7 @@
 		display: grid;
 		grid-template-columns: 1fr;
 		grid-gap: 2rem;
-		padding: 1rem;
+		padding: 2rem 1rem;
 		align-items: center;
 		flex-wrap: wrap;
 		margin: 0 auto;
