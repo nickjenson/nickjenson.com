@@ -45,7 +45,7 @@
 		display: grid;
 		grid-template-columns: 1fr;
 		grid-gap: 2rem;
-		padding: 3rem;
+		padding: 2rem 1rem;
 		align-items: center;
 		flex-wrap: wrap;
 		margin: 0 auto;
@@ -67,8 +67,10 @@
 			text-align: right;
 		}
 		#hero {
+			padding: 3rem;
 			grid-template-columns: repeat(2, minmax(30vw, auto));
 			justify-content: space-around;
+			
 		}
 	}
 </style>
