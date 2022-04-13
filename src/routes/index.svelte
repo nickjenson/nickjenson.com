@@ -20,7 +20,7 @@
 </script>
 
 <section id="hero">
-	<div>
+	<div id="intro">
 		<h1>Nick Jenson</h1>
 		<p><Icon name="briefcase" /> Team Lead, Canvas LMS @ Instructure</p>
 		<p><Icon name="map-pin" /> Portland, OR</p>
@@ -44,33 +44,34 @@
 	#hero {
 		display: grid;
 		grid-template-columns: 1fr;
-		grid-gap: 2rem;
+		gap: 3rem;
 		padding: 2rem 1rem;
-		align-items: center;
 		flex-wrap: wrap;
 		margin: 0 auto;
 		height: fit-content;
 		border-bottom: none;
 	}
+	#intro {
+		justify-content: center;
+		margin: 0 auto;
+	}
 	.hero-buttons {
 		padding: 1rem 0;
 	}
-	h1 {
-		margin-bottom: 0;
+	h1,
+	h2 {
+		margin: 0;
 	}
 	h2 {
 		border-bottom: 1px solid var(--border);
-		margin-bottom: 0;
 	}
 	@media screen and (min-width: 1200px) {
 		h2 {
 			text-align: right;
 		}
 		#hero {
-			padding: 3rem;
-			grid-template-columns: repeat(2, minmax(30vw, auto));
-			justify-content: space-around;
-			
+			padding: 6rem 3rem;
+			grid-template-columns: repeat(2, minmax(20vw, 50vw));
 		}
 	}
 </style>

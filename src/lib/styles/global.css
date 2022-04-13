@@ -16,11 +16,8 @@ body {
 	margin: 0;
 	height: 100vh;
 	position: relative;
-	font-family: var(--font);
 	color: var(--text);
 	background-color: var(--background);
-	-moz-osx-font-smoothing: grayscale;
-	-webkit-font-smoothing: antialiased;
 }
 
 html[theme='dark'] {
