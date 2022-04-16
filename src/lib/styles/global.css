@@ -36,10 +36,6 @@ body.open {
 	overflow-y: hidden;
 }
 
-section {
-	height: calc(100vh - (60px + 55px));
-}
-
 button,
 a.button {
 	border: 1px solid transparent;

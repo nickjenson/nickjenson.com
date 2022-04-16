@@ -21,14 +21,16 @@
 
 <section id="hero">
 	<div id="intro">
-		<h1>Nick Jenson</h1>
-		<p><Icon name="briefcase" /> Team Lead, Canvas LMS @ Instructure</p>
-		<p><Icon name="map-pin" /> Portland, OR</p>
-		<div class="hero-buttons">
-			<Link button="true" primary="true" href="https://github.com/nickjenson" icon="github">
-				Follow on GitHub
-			</Link>
-			<Link button="true" href="https://github.com/nickjenson" icon="code">View Source</Link>
+		<div>
+			<h1>Nick Jenson</h1>
+			<p><Icon name="briefcase" /> Team Lead, Canvas LMS @ Instructure</p>
+			<p><Icon name="map-pin" /> Portland, OR</p>
+			<div class="hero-buttons">
+				<Link button="true" primary="true" href="https://github.com/nickjenson" icon="github">
+					Follow on GitHub
+				</Link>
+				<Link button="true" href="https://github.com/nickjenson/nickjenson.com" icon="code">View Source</Link>
+			</div>
 		</div>
 	</div>
 	<div>
@@ -41,19 +43,21 @@
 	div > p {
 		margin: 0.75rem 0;
 	}
+	section > div {
+		min-height: 50vh;
+	}
+	#intro {
+		display: grid;
+    align-content: center;
+		justify-content: center;
+	}
 	#hero {
 		display: grid;
 		grid-template-columns: 1fr;
 		gap: 3rem;
-		padding: 2rem 1rem;
 		flex-wrap: wrap;
-		margin: 0 auto;
-		height: fit-content;
+		align-items: center;
 		border-bottom: none;
-	}
-	#intro {
-		justify-content: center;
-		margin: 0 auto;
 	}
 	.hero-buttons {
 		padding: 1rem 0;
@@ -70,7 +74,7 @@
 			text-align: right;
 		}
 		#hero {
-			padding: 6rem 3rem;
+			align-items: baseline;
 			grid-template-columns: repeat(2, minmax(20vw, 50vw));
 		}
 	}
