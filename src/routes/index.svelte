@@ -22,7 +22,7 @@
 <section id="hero">
 	<div>
 		<h1>Nick Jenson</h1>
-		<p><Icon name="briefcase" /> Team Lead, Canvas LMS @ Instructure</p>
+		<p><Icon name="briefcase" /> Canvas LMS @ Instructure</p>
 		<p><Icon name="map-pin" /> Portland, OR</p>
 		<div class="hero-buttons">
 			<Link button="true" primary="true" href="https://github.com/nickjenson" icon="github">
