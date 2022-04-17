@@ -22,8 +22,11 @@
 		margin: 0.5rem 0;
 	}
 	.titlebar {
-		display: flex;
-		justify-content: space-between;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+	}
+	.titlebar > small {
+		text-align: right;
 	}
 	h3 {
 		margin: 0;

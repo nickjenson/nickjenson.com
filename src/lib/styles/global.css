@@ -16,11 +16,8 @@ body {
 	margin: 0;
 	height: 100vh;
 	position: relative;
-	font-family: var(--font);
 	color: var(--text);
 	background-color: var(--background);
-	-moz-osx-font-smoothing: grayscale;
-	-webkit-font-smoothing: antialiased;
 }
 
 html[theme='dark'] {
@@ -37,10 +34,6 @@ html[theme='light'] {
 
 body.open {
 	overflow-y: hidden;
-}
-
-section {
-	height: calc(100vh - (60px + 55px));
 }
 
 button,

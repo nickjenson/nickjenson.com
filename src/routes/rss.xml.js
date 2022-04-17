@@ -33,16 +33,12 @@ const render = (posts) =>
       <description>${desc}</description>
       <link>${url}</link>
       <atom:link href="${url}/rss.xml" rel="self" type="application/rss+xml"/>
-        ${posts
-					.map(
-						(post) => `<item>
+        ${posts.map((post) => `<item>
           <guid isPermaLink="true">${url}/blog/${post.slug}</guid>
           <title>${post.title}</title>
           <link>${url}/blog/${post.slug}</link>
           <description>${post.description}</description>
           <pubDate>${new Date(post.date).toUTCString()}</pubDate>
-          </item>`
-					)
-					.join('')}
+          </item>`).join('')}
     </channel>
   </rss>`;
