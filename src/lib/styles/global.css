@@ -41,7 +41,6 @@ a.button {
 	border: 1px solid transparent;
 	border-radius: var(--radius);
 	color: var(--color);
-	transition-duration: 0.2s;
 	background-color: inherit;
 	text-decoration: none;
 	padding: 0.5rem;
