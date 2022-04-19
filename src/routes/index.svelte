@@ -44,9 +44,7 @@
 		margin: 0.75rem 0;
 	}
 	section > div {
-		min-height: 50vh;
-	}
-	#intro {
+		min-height: 40vh;
 		display: grid;
     align-content: center;
 		justify-content: center;
@@ -72,6 +70,11 @@
 	@media screen and (min-width: 1200px) {
 		h2 {
 			text-align: right;
+		}
+		#intro {
+			display: grid;
+			align-content: center;
+			justify-content: left;
 		}
 		#hero {
 			align-items: baseline;
