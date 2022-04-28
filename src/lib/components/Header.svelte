@@ -11,7 +11,7 @@
 <div id="header" class:sticky>
 	<header>
 		{#if hamburger}
-			<Button class="menu" icon="menu" on:click={() => (open = !open)} />
+			<Button class="menu" icon={open ? 'x' : 'menu'} on:click={() => (open = !open)} />
 		{/if}
 		<slot />
 		<div>
