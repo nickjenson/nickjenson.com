@@ -21,19 +21,17 @@
 
 <section id="hero">
 	<div id="intro">
-		<div>
-			<h1>Nick Jenson</h1>
-			<p><Icon name="briefcase" /> Canvas LMS @ Instructure</p>
-			<p><Icon name="map-pin" /> Portland, OR</p>
-			<div class="hero-buttons">
-				<Link button="true" primary="true" href="https://github.com/nickjenson" icon="github">
-					Follow on GitHub
-				</Link>
-				<Link button="true" href="https://github.com/nickjenson/nickjenson.com" icon="code">View Source</Link>
-			</div>
+		<h1>Nick Jenson</h1>
+		<p><Icon name="briefcase" /> Canvas LMS @ Instructure</p>
+		<p><Icon name="map-pin" /> Portland, OR</p>
+		<div class="hero-buttons">
+			<Link button="true" primary="true" href="https://github.com/nickjenson" icon="github">
+			Follow on GitHub
+			</Link>
+			<Link button="true" href="https://github.com/nickjenson/nickjenson.com" icon="code">View Source</Link>
 		</div>
 	</div>
-	<div>
+	<div id="articles">
 		<h2>Recent Articles</h2>
 		<Articles {posts} />
 	</div>
@@ -41,13 +39,16 @@
 
 <style>
 	div > p {
-		margin: 0.75rem 0;
+		margin: 0.25rem 0;
+		color: var(--text)
 	}
 	section > div {
 		min-height: 40vh;
 		display: grid;
+		grid-template-columns: 1fr;
     align-content: center;
 		justify-content: center;
+		justify-self: center;
 	}
 	#hero {
 		display: grid;
@@ -67,18 +68,7 @@
 	h2 {
 		border-bottom: 1px solid var(--border);
 	}
-	@media screen and (min-width: 1200px) {
-		h2 {
-			text-align: right;
-		}
-		#intro {
-			display: grid;
-			align-content: center;
-			justify-content: left;
-		}
-		#hero {
-			align-items: baseline;
-			grid-template-columns: repeat(2, minmax(20vw, 50vw));
-		}
+	#articles {
+		width: 100%;
 	}
 </style>

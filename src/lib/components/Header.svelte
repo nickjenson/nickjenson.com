@@ -8,8 +8,8 @@
 	export let open = false;
 </script>
 
-<div id="header" class:sticky>
-	<header>
+<header class:sticky>
+	<div id="header" >
 		{#if hamburger}
 			<Button class="menu" icon={open ? 'x' : 'menu'} on:click={() => (open = !open)} />
 		{/if}
@@ -22,8 +22,8 @@
 			</nav>
 			<slot name="utilities" />
 		</div>
-	</header>
-</div>
+	</div>
+</header>
 
 {#if hamburger}
 	<Sidebar {nav} {open} />
@@ -31,27 +31,25 @@
 
 <style>
 	#header {
-		display: flex;
-		justify-content: space-around;
-		border-bottom: solid 1px var(--border);
-		background: var(--background);
-	}
-	header {
-		max-width: var(--max-width);
-		width: 100%;
-		height: var(--header-height);
+		width: inherit;
 		display: flex;
 		justify-content: space-between;
+		
+		max-width: var(--max-width);
+	}
+	header {
+		background: var(--background);
+		width: 100%;
+		z-index: 9999;
+		padding: 0.5rem 1rem;
+		height: var(--header-height);
+		display: flex;
+		justify-content: space-around;
 	}
 	nav {
 		display: none;
 		align-items: center;
 		justify-content: center;
-	}
-	nav::after {
-		content: '';
-		width: 1px;
-		background: var(--border);
 	}
 	header div {
 		display: inline-flex;

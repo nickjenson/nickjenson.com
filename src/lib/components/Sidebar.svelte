@@ -22,16 +22,18 @@
 		padding-inline-start: 1rem;
 	}
 	li {
+		color: var(--color) !important;
 		list-style: none;
 		margin: 0.25rem 0;
 	}
 	aside {
-		z-index: 9999;
+		padding: 2rem 0;
+		z-index: 9998;
 		color: var(--color);
 		background: var(--background);
 		position: fixed;
-		left: -100%;
-		transition: left 0.3s ease-in-out;
+		top: -100vh;
+		transition: top 0.3s ease-in-out;
 	}
 	nav {
 		padding: 2rem;
@@ -39,6 +41,6 @@
 		height: 100vh;
 	}
 	.open {
-		left: 0;
+		top: 0;
 	}
 </style>

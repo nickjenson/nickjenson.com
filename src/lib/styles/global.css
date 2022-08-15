@@ -7,6 +7,7 @@
 *::after {
 	box-sizing: border-box;
 }
+
 html {
 	margin: 0;
 	height: 100vh;
@@ -22,12 +23,14 @@ body {
 
 html[theme='dark'] {
 	--text: var(--dark-text);
+	--text-secondary: var(--dark-text-secondary);
 	--background: var(--dark-background);
 	--border: var(--dark-border);
 }
 
 html[theme='light'] {
 	--text: var(--light-text);
+	--text-secondary: var(--light-text-secondary);
 	--background: var(--light-background);
 	--border: var(--light-border);
 }
@@ -56,6 +59,7 @@ a.button:hover:not(.primary) {
 a {
 	color: var(--primary);
 }
+
 .primary {
 	font-weight: 500;
 	background-color: var(--accent);
@@ -69,7 +73,6 @@ nav a.button,
 header button,
 header a.button {
 	height: 100%;
-	border-radius: 0;
 	display: inline-flex;
 	vertical-align: middle;
 }
@@ -80,9 +83,6 @@ a.button.primary {
 }
 
 @media screen and (min-width: 1200px) {
-	section {
-		height: calc(100vh - (60px + 55px));
-	}
 	.menu {
 		display: none;
 	}

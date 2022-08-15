@@ -2,7 +2,7 @@
 	--font: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Helvetica, sans-serif;
 	--font-mono: 'Fira Mono', monospace;
 	font-size: 16px;
-	line-height: 1.5;
+	line-height: 1.7;
 	font-weight: 400;
 }
 
@@ -12,6 +12,12 @@ body {
 	-webkit-font-smoothing: antialiased;
 }
 
+p,
+pre {
+	margin-top: 0;
+	margin-bottom: .5rem;
+}
+
 h1,
 h2,
 h3,
@@ -19,8 +25,13 @@ h4,
 h5 {
 	font-weight: 600;
 	line-height: 1.25;
-	margin-top: 1em;
-	margin-bottom: 0.5em;
+	margin-top: 0;
+	margin-bottom: 1rem;
+}
+
+p {
+	color: var(--text-secondary);
+
 }
 
 h1 {
@@ -53,7 +64,7 @@ code {
 }
 
 footer {
-	font-size: 0.8909em;
+	font-size: .9rem;
 }
 
 small {
@@ -82,9 +93,15 @@ small {
 
 @media screen and (min-width: 1200px) {
 	h1 {
-		font-size: 2.4em;
+		font-size: 2.5rem;
+	}
+	h2 {
+		font-size: 2.0rem;
+	}
+	h3 {
+		font-size: 1.75rem;
 	}
 	p {
-		font-size: 1em;
+		font-size: 1.25rem;
 	}
 }

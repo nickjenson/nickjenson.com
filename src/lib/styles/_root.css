@@ -1,16 +1,18 @@
 :root {
-	--primary: #00bffc;
-	--header-height: 3rem;
+	--primary: #51a3ee;
+	--header-height: 4rem;
 	--radius: 0.375rem;
 	--max-width: 75rem;
 	--dark-text: #fefefe;
-	--dark-background: #181818;
+	--dark-text-secondary: #e6e6e6;
+	--dark-background: #111111;
 	--dark-border: #2a2a2a;
 	--dark-hover: #2a2a2a;
 	--light-text: #0d1117;
+	--light-text-secondary: #2b2b2b;
 	--light-background: #f4f4f4;
 	--light-border: #8d8d8d;
-	--light-hover: #e5e5e5;
+	--light-hover: #ccc;
 	--text: var(--dark-text);
 	--background: var(--dark-background);
 	--border: var(--dark-border);

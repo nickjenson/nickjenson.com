@@ -31,14 +31,12 @@
 	{/if}
 </svelte:head> -->
 
-<Header --background="#181818" --color="#fefefe" sticky="true" hamburger="true" {nav}>
+<Header sticky="true" hamburger="true" {nav}>
 	<Link href="/">
 		<div id="logo" />
 	</Link>
 	<span slot="utilities">
 		<ThemeToggle />
-		<Link button="true" href="https://github.com/nickjenson" icon="github" />
-		<Link button="true" href="/rss.xml" icon="rss" />
 	</span>
 </Header>
 <main>
@@ -56,7 +54,7 @@
 			display: block;
 		}
 		main {
-			padding: 3rem;
+			padding: 1rem 2rem;
 			max-width: var(--max-width);
 		}
 	}
