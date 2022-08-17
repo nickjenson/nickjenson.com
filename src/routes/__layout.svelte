@@ -31,15 +31,16 @@
 <Footer />
 
 <style>
-	main {
-		justify-self: center;
-		align-self: flex-start;
-		padding: 2rem 1rem;
+	:global(body){
+		display: flex;
+		flex-direction: column;
 	}
-	@media screen and (min-width: 1200px) {
-		main {
-			padding: 1rem 2rem;
-			width: var(--max-width);
-		}
+	main {
+		flex: 1;
+		width: 100vw;
+		justify-self: center;
+		align-self: center;
+		padding: 1rem;
+		max-width: var(--max-width);
 	}
 </style>
