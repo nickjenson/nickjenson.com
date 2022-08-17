@@ -5,11 +5,11 @@
 	export let nav = [];
 	export let hamburger = false;
 	export let sticky = false;
-	export let open = false;
+	let open = false;
 </script>
 
 <header class:sticky>
-	<div id="header" >
+	<div id="header">
 		{#if hamburger}
 			<Button class="menu" icon={open ? 'x' : 'menu'} on:click={() => (open = !open)} />
 		{/if}
@@ -26,7 +26,7 @@
 </header>
 
 {#if hamburger}
-	<Sidebar {nav} {open} />
+	<Sidebar {nav} bind:open />
 {/if}
 
 <style>
@@ -34,14 +34,14 @@
 		width: inherit;
 		display: flex;
 		justify-content: space-between;
-		
+
 		max-width: var(--max-width);
 	}
 	header {
 		background: var(--background);
 		width: 100%;
 		z-index: 9999;
-		padding: 0.5rem 1rem;
+		padding: 0.5rem;
 		height: var(--header-height);
 		display: flex;
 		justify-content: space-around;

@@ -8,7 +8,7 @@ import rehypeAutolinkHeadings from 'rehype-autolink-headings';
  * restart dev server after making any config changes
  */
 const config = {
-	kit: { 
+	kit: {
 		adapter: adapter(),
 		prerender: {
 			default: true

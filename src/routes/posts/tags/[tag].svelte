@@ -8,7 +8,8 @@
 
 		return {
 			props: {
-				posts: matched
+				posts: matched,
+				tag: tag
 			}
 		};
 	};
@@ -16,7 +17,12 @@
 
 <script>
 	export let posts;
+	export let tag;
 </script>
+
+<svelte:head>
+	<title>Nick Jenson | Posts tagged {tag}</title>
+</svelte:head>
 
 {#if posts.length}
 	<ul>

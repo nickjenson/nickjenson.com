@@ -22,8 +22,8 @@
 		margin: 0.5rem 0;
 	}
 	.titlebar {
-    display: grid;
-    grid-template-columns: 3fr 1fr;
+		display: grid;
+		grid-template-columns: 3fr 1fr;
 	}
 	.titlebar > small {
 		text-align: right;

@@ -13,18 +13,18 @@ Svelte is different than other popular font-end component frameworks because in 
 
 The compile step happens when you build your app unlike React or Vue. It doesn't use a virtual DOM and instead the DOM is manipulated directly.
 
->Instead of using techniques like virtual DOM diffing, Svelte writes code that surgically updates the DOM when the state of your app changes - [svelte.dev](https://svelte.dev)
+> Instead of using techniques like virtual DOM diffing, Svelte writes code that surgically updates the DOM when the state of your app changes - [svelte.dev](https://svelte.dev)
 
-Svelte is nice to work with and understand thanks to its familiar markup written into `.svelte` files using a superset of HTML. 
+Svelte is nice to work with and understand thanks to its familiar markup written into `.svelte` files using a superset of HTML.
 
 All three sections of the following are optional:
+
 ```svelte
 <script>
 	// logic goes here
 </script>
 
 <!-- markup goes here -->
-
 <style>
 	/* styles go here */
 </style>
@@ -35,13 +35,14 @@ Assign a value to a locally declared variable to change component state and trig
 ```svelte
 <script>
 	let count = 0;
-	function handleClick () {
+	function handleClick() {
 		count += 1;
 	}
 </script>
 ```
 
 The same function is used in the example component below:
+
 ```svelte
 <script>
 	let count = 0;
@@ -51,7 +52,8 @@ The same function is used in the example component below:
 </script>
 
 <button on:click={handleClick}>
-	Clicked {count} {count === 1 ? 'time' : 'times'}
+	Clicked {count}
+	{count === 1 ? 'time' : 'times'}
 </button>
 ```
 

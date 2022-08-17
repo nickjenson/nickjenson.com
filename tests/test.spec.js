@@ -11,8 +11,8 @@ test('home page', async ({ page }) => {
 test('about page', async ({ page }) => {
 	await page.goto('/about');
 	expect(await page.textContent('h1')).toBe("Hi, I'm Nick!");
-	const locator = page.locator("#memoji");
-	await expect(locator).toHaveAttribute('alt', 'Nick\'s Memoji');
+	const locator = page.locator('#memoji');
+	await expect(locator).toHaveAttribute('alt', "Nick's Memoji");
 	await expect(locator).toHaveAttribute('src', '/images/memoji.png');
 });
 

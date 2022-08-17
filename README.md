@@ -9,4 +9,3 @@ Portfolio cybernetically enhanced with Svelte + SvelteKit
 - Svelte
 - SvelteKit
 - MDsveX
-

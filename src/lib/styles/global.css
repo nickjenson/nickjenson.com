@@ -8,17 +8,17 @@
 	box-sizing: border-box;
 }
 
-html {
-	margin: 0;
-	height: 100vh;
-}
-
 body {
 	margin: 0;
-	height: 100vh;
-	position: relative;
 	color: var(--text);
 	background-color: var(--background);
+}
+
+body > div {
+	margin: 0;
+	height: 100vh;
+	display: grid;
+	grid-template-rows: auto 1fr auto;
 }
 
 html[theme='dark'] {
@@ -49,11 +49,17 @@ a.button {
 	padding: 0.5rem;
 	min-height: 2rem;
 	align-items: center;
+	text-align: center;
+	display: block;
 }
 
 button:hover:not(.primary),
 a.button:hover:not(.primary) {
 	background-color: var(--border);
+}
+
+.outline {
+	border: 1px solid var(--text);
 }
 
 a {
@@ -82,9 +88,18 @@ a.button.primary {
 	background-color: var(--primary);
 }
 
+blockquote {
+	margin: 0;
+	padding-left: 2rem;
+	border-left: 0.25rem solid var(--text);
+}
+
 @media screen and (min-width: 1200px) {
 	.menu {
 		display: none;
+	}
+	#intro a {
+		display: initial;
 	}
 }
 

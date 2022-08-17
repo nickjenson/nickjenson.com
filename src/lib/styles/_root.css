@@ -6,6 +6,7 @@
 	--dark-text: #fefefe;
 	--dark-text-secondary: #e6e6e6;
 	--dark-background: #111111;
+	--dark-background-secondary: #151515;
 	--dark-border: #2a2a2a;
 	--dark-hover: #2a2a2a;
 	--light-text: #0d1117;
@@ -15,6 +16,7 @@
 	--light-hover: #ccc;
 	--text: var(--dark-text);
 	--background: var(--dark-background);
+	--background-secondary: var(--dark-background-secondary);
 	--border: var(--dark-border);
 }
 

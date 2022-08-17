@@ -15,6 +15,10 @@
 	export let posts;
 </script>
 
+<svelte:head>
+	<title>Nick Jenson | Articles</title>
+</svelte:head>
+
 <ul>
 	{#each posts as post}
 		<li>

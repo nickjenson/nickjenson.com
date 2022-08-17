@@ -1,9 +1,7 @@
 <script>
-	import { browser } from '$app/env';
 	import Link from './Link.svelte';
 	export let nav = [];
-	export let open = false;
-	$: if (browser) document.body.classList.toggle('open', open);
+	export let open;
 </script>
 
 <aside class:open>
@@ -11,7 +9,9 @@
 		<h3>Menu</h3>
 		<ul>
 			{#each nav as link}
-				<li><Link on:click={() => (open = !open)} href={link.href}>{link.title}</Link></li>
+				<li>
+					<Link on:click={() => (open = false)} href={link.href}>{link.title}</Link>
+				</li>
 			{/each}
 		</ul>
 	</nav>

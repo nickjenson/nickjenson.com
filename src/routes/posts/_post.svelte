@@ -4,6 +4,11 @@
 	export let tags;
 </script>
 
+<svelte:head>
+	<meta name="description" content="Software development portfolio and articles by Nick Jenson" />
+	<title>Nick Jenson | {title}</title>
+</svelte:head>
+
 <h1>{title}</h1>
 
 <p>Published: {date}</p>
