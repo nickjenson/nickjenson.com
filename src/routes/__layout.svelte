@@ -13,7 +13,6 @@
 	import Header from '$lib/components/Header.svelte';
 	import Footer from '$lib/components/Footer.svelte';
 	import ThemeToggle from '$lib/components/ThemeToggle.svelte';
-	import Link from '$lib/components/Link.svelte';
 	let nav = [
 		{ title: 'Home', href: '/' },
 		{ title: 'About', href: '/about' },
@@ -22,9 +21,6 @@
 </script>
 
 <Header sticky="true" hamburger="true" {nav}>
-	<Link href="/">
-		<div id="logo" />
-	</Link>
 	<span slot="utilities">
 		<ThemeToggle />
 	</span>
@@ -41,9 +37,6 @@
 		padding: 2rem 1rem;
 	}
 	@media screen and (min-width: 1200px) {
-		#logo {
-			display: block;
-		}
 		main {
 			padding: 1rem 2rem;
 			width: var(--max-width);
