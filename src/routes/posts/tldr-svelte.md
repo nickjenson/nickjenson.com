@@ -1,7 +1,7 @@
 ---
 date: '2022-04-09'
 updated: '2022-04-27'
-title: tl;dr on Svelte
+title: tl;dr on Svelte basics
 description: Working with Svelte
 tags:
   - javascript
@@ -24,7 +24,8 @@ All three sections of the following are optional:
 	// logic goes here
 </script>
 
-<!-- markup goes here -->
+	<!-- markup goes here -->
+
 <style>
 	/* styles go here */
 </style>
