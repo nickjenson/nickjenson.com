@@ -34,7 +34,6 @@
 		width: inherit;
 		display: flex;
 		justify-content: space-between;
-
 		max-width: var(--max-width);
 	}
 	header {
@@ -60,6 +59,9 @@
 		z-index: 9999;
 	}
 	@media screen and (min-width: 1200px) {
+		#header {
+			justify-content: flex-end;
+		}
 		nav {
 			display: flex;
 		}
