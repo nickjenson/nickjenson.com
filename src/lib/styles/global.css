@@ -20,6 +20,7 @@ html[theme='dark'] {
 	--text-secondary: var(--dark-text-secondary);
 	--background: var(--dark-background);
 	--border: var(--dark-border);
+	--code: var(--dark-code);
 }
 
 html[theme='light'] {
@@ -27,6 +28,7 @@ html[theme='light'] {
 	--text-secondary: var(--light-text-secondary);
 	--background: var(--light-background);
 	--border: var(--light-border);
+	--code: var(--light-code);
 }
 
 body.open {

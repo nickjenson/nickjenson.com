@@ -60,7 +60,7 @@ h6 {
 p > code {
 	padding: 2px;
 	border-radius: 2px;
-	background-color: #1e1e1e;
+	background-color: var(--code);
 }
 
 footer {
