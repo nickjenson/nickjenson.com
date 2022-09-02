@@ -8,14 +8,18 @@
 	</div>
 	<h1>Hi, I'm Nick!</h1>
 	<p>
-		I am a technical manager with years of experience working in the SaaS education technology
-		industry. I’ve worked with some of the country's largest school districts and universities with
-		a primary focus on their SIS data integrations.
+		I’m an ambitious technical lead with years of experience 
+		working in the SaaS education technology industry. My work focuses 
+		around data integrations with RESTful APIs, front-end development, 
+		and project management. I enjoy developing tools, solving 
+		problems, and experimenting with new frameworks.
 	</p>
 </section>
 
 <style>
-	section div {
+	section div,
+	section h1 {
+		margin: 1rem;
 		display: flex;
 		align-items: center;
 		justify-content: center;

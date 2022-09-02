@@ -10,7 +10,7 @@
 		<ul>
 			{#each nav as link}
 				<li>
-					<Link on:click={() => (open = false)} href={link.href}>{link.title}</Link>
+					<Link class="button" on:click={() => (open = false)} href={link.href}>{link.title}</Link>
 				</li>
 			{/each}
 		</ul>

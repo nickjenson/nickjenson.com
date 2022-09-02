@@ -54,8 +54,8 @@ a.button:hover:not(.primary) {
 	background-color: var(--border);
 }
 
-.outline {
-	border: 1px solid var(--text);
+a.outline {
+	border: 2px solid var(--border);
 }
 
 a {

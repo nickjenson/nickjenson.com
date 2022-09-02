@@ -17,7 +17,7 @@
 		<div>
 			<nav>
 				{#each nav as link}
-					<Link button="true" href={link.href}>{link.title}</Link>
+					<Link class="button" href={link.href}>{link.title}</Link>
 				{/each}
 			</nav>
 			<slot name="utilities" />

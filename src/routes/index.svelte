@@ -33,10 +33,10 @@
 				<p><Icon name="map-pin" /> Portland, OR</p>
 			</div>
 			<div class="hero-buttons">
-				<Link button="true" primary="true" href="https://github.com/nickjenson" icon="github">
+				<Link class="button primary" href="https://github.com/nickjenson" icon="github">
 					Follow on GitHub
 				</Link>
-				<Link button="true" href="https://github.com/nickjenson/nickjenson.com" icon="code">
+				<Link class="button outline" href="https://github.com/nickjenson/nickjenson.com" icon="code">
 					View Source
 				</Link>
 			</div>
@@ -86,7 +86,11 @@
 		align-self: center;
 	}
 	.hero-buttons {
-		padding: 1rem 0;
+		padding: 1rem;
+	}
+	:global(.hero-buttons a.button){
+		margin: 0.5rem 0.25rem;
+		padding: 0.5rem 1rem;
 	}
 	h1,
 	h2 {
