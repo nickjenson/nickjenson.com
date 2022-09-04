@@ -2,12 +2,12 @@
 
 <style>
   span {
-    height: 2rem;
     margin: 0 .5rem;
-    padding: 0 .5rem;
+    padding: 0 .4rem;
     border-radius: 2px;
+    vertical-align: baseline;
     background-color: var(--text);
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     -webkit-animation: 1.5s blink step-end infinite;
     -moz-animation: 1.5s blink step-end infinite;
     -ms-animation: 1.5s blink step-end infinite;
