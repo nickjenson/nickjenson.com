@@ -86,7 +86,7 @@
 		align-self: center;
 	}
 	.hero-buttons {
-		padding: 1rem;
+		padding: 1rem 0;
 	}
 	:global(.hero-buttons a.button){
 		margin: 0.5rem 0.25rem;

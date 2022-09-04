@@ -12,7 +12,8 @@
 	import '$lib/styles/global.css';
 	import Header from '$lib/components/Header.svelte';
 	import Footer from '$lib/components/Footer.svelte';
-	import ThemeToggle from '$lib/components/ThemeToggle.svelte';
+	import Theme from '$lib/components/Theme.svelte';
+	
 	let nav = [
 		{ title: 'Home', href: '/' },
 		{ title: 'About', href: '/about' },
@@ -22,7 +23,7 @@
 
 <Header sticky="true" hamburger="true" {nav}>
 	<span slot="utilities">
-		<ThemeToggle />
+		<Theme />
 	</span>
 </Header>
 <main>
