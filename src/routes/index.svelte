@@ -16,6 +16,7 @@
 	import Icon from '$lib/components/Icon.svelte';
 	import Link from '$lib/components/Link.svelte';
 	import Articles from '$lib/components/Articles.svelte';
+	import Cursor from '$lib/components/Cursor.svelte';
 	export let posts;
 </script>
 
@@ -28,7 +29,7 @@
 		<img id="memoji" src="/images/memoji.png" alt="Nick's Memoji" />
 		<div id="intro">
 			<div id="details">
-				<h1>Nick Jenson</h1>
+				<h1>Nick Jenson <Cursor /></h1>
 				<p><Icon name="briefcase" /> Canvas LMS @ Instructure</p>
 				<p><Icon name="map-pin" /> Portland, OR</p>
 			</div>
