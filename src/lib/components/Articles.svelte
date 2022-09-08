@@ -28,10 +28,7 @@
 	.titlebar > small {
 		text-align: right;
 	}
-	h3 {
-		margin: 0;
-	}
-	p {
+	p, h3 {
 		margin: 0;
 	}
 	a {
