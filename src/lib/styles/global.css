@@ -35,6 +35,10 @@ body.open {
 	overflow-y: hidden;
 }
 
+hr {
+	border: 1px solid var(--border);
+}
+
 button,
 a.button {
 	border: 1px solid transparent;

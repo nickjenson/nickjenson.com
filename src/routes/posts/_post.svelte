@@ -1,4 +1,6 @@
 <script>
+	import Icon from '$lib/components/Icon.svelte';
+	import Tag from '$lib/components/Tag.svelte';
 	export let title;
 	export let date;
 	export let tags;
@@ -11,16 +13,33 @@
 
 <h1>{title}</h1>
 <p>Published: {date}</p>
-<slot />
+<div id="content">
+	<slot />
+</div>
 {#if tags.length}
-	<div>
-		<h3>Tags</h3>
-		<ul>
-			{#each tags as tag}
-				<li>
-					<a href="/posts/tags/{tag}">{tag}</a>
-				</li>
-			{/each}
-		</ul>
-	</div>
+	<hr>
+	<h3><Icon name="tag"/>Tags</h3>
+	<ul id="tags">
+		{#each tags as tag}
+			<li>
+				<Tag href="/posts/tags/{tag}" {tag} />
+			</li>
+		{/each}
+	</ul>
 {/if}
+
+<style>
+	h3 {
+		margin-top: 2rem;
+	}
+	#content {
+		padding: 2rem 0;
+	}
+	#tags {
+		padding: .5rem;
+		display: inline-flex;
+		list-style-type: none;
+		padding-inline-start: 0;
+		margin-block-start: 0;
+	}
+</style>
