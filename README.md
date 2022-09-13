@@ -4,8 +4,19 @@
 
 Portfolio cybernetically enhanced with Svelte + SvelteKit
 
+## Components
+
+- Header
+- Footer
+- Button
+- Icon
+- Link
+- Sidebar
+- Theme
+
 ## Tooling
 
 - Svelte
 - SvelteKit
 - MDsveX
+- Feather Icons
