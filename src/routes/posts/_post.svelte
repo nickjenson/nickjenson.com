@@ -17,7 +17,6 @@
 	<slot />
 </div>
 {#if tags.length}
-	<hr>
 	<h3><Icon name="tag"/>Tags</h3>
 	<ul id="tags">
 		{#each tags as tag}
@@ -30,7 +29,8 @@
 
 <style>
 	h3 {
-		margin-top: 2rem;
+		padding-top: 2rem;
+		border-top: 2px solid var(--border)
 	}
 	#content {
 		padding: 2rem 0;

@@ -1,8 +1,8 @@
 ---
 date: '2022-04-09'
 updated: '2022-04-27'
-title: tl;dr on Svelte basics
-description: Working with Svelte
+title: Five Seconds to Svelte
+description: A brief intro to Svelte
 tags:
   - javascript
   - svelte
@@ -11,7 +11,7 @@ layout: posts
 
 Svelte is different than other popular font-end component frameworks because in short, Svelte is **primarily a compiler**.
 
-The compile step happens when you build your app unlike React or Vue. It doesn't use a virtual DOM and instead the DOM is manipulated directly.
+The compile step happens when you build your app and unlike React, or Vue, it doesn't use a virtual DOM and instead the DOM is manipulated directly.
 
 > Instead of using techniques like virtual DOM diffing, Svelte writes code that surgically updates the DOM when the state of your app changes - [svelte.dev](https://svelte.dev)
 
