@@ -1,5 +1,5 @@
 <script>
-  import Icon from '$lib/components/Icon.svelte';
+  import Icon from './Icon.svelte';
   export let href;
   export let tag;
 </script>

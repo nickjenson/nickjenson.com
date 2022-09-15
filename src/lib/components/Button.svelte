@@ -1,16 +1,17 @@
 <script>
 	import Icon from './Icon.svelte';
-	export let icon = undefined;
-	export let iconDescription = undefined;
-	let className = undefined;
-	export { className as class };
 	export let disabled = false;
-	export let tabindex = undefined;
+	export let icon;
+	export let description;
+	
+	let className;
+	// required for export of `class`
+	export { className as class };	
 </script>
 
-<button on:click {disabled} {tabindex} class={className} aria-label={iconDescription}>
+<button on:click {disabled} class={className} aria-label={description}>
 	<slot />
-	{#if iconDescription}
+	{#if description}
 		<span aria-hidden="true">
 			<Icon name={icon} />
 		</span>

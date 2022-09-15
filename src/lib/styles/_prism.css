@@ -1,5 +1,6 @@
 code[class*='language-'],
 pre[class*='language-'] {
+	font-size: 1rem;
 	color: #00bffe;
 	background: none;
 	text-shadow: 0 1px rgba(0, 0, 0, 0.3);
@@ -8,7 +9,7 @@ pre[class*='language-'] {
 	word-spacing: normal;
 	word-break: normal;
 	word-wrap: normal;
-	line-height: 1.2;
+	line-height: 1.6;
 	tab-size: 4;
 	hyphens: none;
 }
@@ -18,7 +19,7 @@ pre[class*='language-'] {
 	padding: 1em;
 	margin: 0 0 1rem 0;
 	overflow: auto;
-	border-radius: 0.3em;
+	border-radius: var(--radius);
 }
 
 :not(pre) > code[class*='language-'],
@@ -29,7 +30,7 @@ pre[class*='language-'] {
 /* Inline code */
 :not(pre) > code[class*='language-'] {
 	padding: 0.1em;
-	border-radius: 0.3em;
+	border-radius: var(--radius);
 	white-space: normal;
 }
 
