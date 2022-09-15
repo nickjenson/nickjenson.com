@@ -6,7 +6,7 @@ export const get = async () => {
 	const posts = await Promise.all(
 		Object.entries(import.meta.glob('./posts/*.md')).map(async ([path, resolver]) => {
 			const {metadata, default: { render }} = await resolver();
-			const {html} = render();
+			const { html } = render();
 			const slug = path.slice(2, -3);
 			
 			return { 
@@ -24,7 +24,7 @@ export const get = async () => {
 		'Cache-Control': 'max-age=0, s-maxage=3600',
 		'Content-Type': 'application/xml'
 	};
-	console.log(body)
+	
 	return {
 		body,
 		headers
