@@ -10,7 +10,7 @@
     vertical-align: baseline;
     background-color: var(--dark-background);
     font-size: 1.3rem;
-    animation: 2s blink step-end infinite;
+    animation: 1.6s blink step-end infinite;
   }
   @keyframes blink {
     from, to {
