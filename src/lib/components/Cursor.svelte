@@ -8,24 +8,16 @@
     position: relative;
     bottom: 2px;
     vertical-align: baseline;
-    background-color: var(--text);
+    background-color: var(--dark-background);
     font-size: 1.3rem;
-    animation: 2s blink step-end infinite;
+    animation: 1.6s blink step-end infinite;
   }
   @keyframes blink {
     from, to {
-      background-color: transparent;
+      background-color: var(--dark-background);
     }
     50% {
-      background-color: var(--text);
-    }
-  }
-  @-webkit-keyframes blink {
-    from, to {
-      background-color: transparent;
-    }
-    50% {
-      background-color: var(--text);
+      background-color: var(--light-background);
     }
   }
 </style>
