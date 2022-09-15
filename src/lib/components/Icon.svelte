@@ -1,14 +1,13 @@
 <script>
 	import feather from 'feather-icons';
-	export const directions = ['n', 'ne', 'e', 'se', 's', 'sw', 'w', 'nw'];
-	export let name;
-	export let direction = 'n';
-	export let strokeWidth;
-	export let stroke;
 	export let width = '1rem';
 	export let height = '1rem';
+	export let rotation = 0;
+	export let name;
+	export let stroke;
+	export let strokeWidth;
+	
 	$: icon = feather.icons[name];
-	$: rotation = directions.indexOf(direction) * 45;
 	$: if (icon) {
 		if (stroke) icon.attrs['stroke'] = stroke;
 		if (strokeWidth) icon.attrs['stroke-width'] = strokeWidth;
