@@ -1,5 +1,5 @@
 <svelte:head>
-	<title>Nick Jenson | About</title>
+	<title>About | Nick Jenson</title>
 </svelte:head>
 
 <section>
