@@ -2,13 +2,14 @@
 	import Icon from '$lib/components/Icon.svelte';
 	import Tag from '$lib/components/Tag.svelte';
 	export let title;
+	export let desc;
 	export let date;
 	export let tags;
 </script>
 
 <svelte:head>
-	<meta name="description" content="Software development portfolio and articles by Nick Jenson" />
-	<title>Nick Jenson | {title}</title>
+	<meta name="description" content={desc} />
+	<title>{title} | Nick Jenson</title>
 </svelte:head>
 
 <h1>{title}</h1>

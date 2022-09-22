@@ -21,7 +21,8 @@
 </script>
 
 <svelte:head>
-	<title>Nick Jenson | Home</title>
+	<title>Nick Jenson</title>
+	<meta name="description" content="Software development portfolio and articles by Nick Jenson" />
 </svelte:head>
 
 <section id="hero">
