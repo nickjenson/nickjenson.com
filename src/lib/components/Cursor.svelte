@@ -3,7 +3,7 @@
 <style>
 	span {
 		margin: 0 0.6rem;
-		padding: 0 0.35rem;
+		padding: 0 0.4rem;
 		border-radius: 1px;
 		position: relative;
 		bottom: 2px;
