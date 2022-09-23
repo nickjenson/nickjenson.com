@@ -5,11 +5,14 @@ const desc = 'Portfolio and blog';
 export const get = async () => {
 	const posts = await Promise.all(
 		Object.entries(import.meta.glob('./posts/*.md')).map(async ([path, resolver]) => {
-			const {metadata, default: { render }} = await resolver();
+			const {
+				metadata,
+				default: { render }
+			} = await resolver();
 			const { html } = render();
 			const slug = path.slice(2, -3);
-			
-			return { 
+
+			return {
 				...metadata,
 				slug,
 				html
@@ -24,7 +27,7 @@ export const get = async () => {
 		'Cache-Control': 'max-age=0, s-maxage=3600',
 		'Content-Type': 'application/xml'
 	};
-	
+
 	return {
 		body,
 		headers
@@ -39,12 +42,16 @@ const render = (posts) =>
       <description>${desc}</description>
       <link>${url}</link>
       <atom:link href="${url}/rss.xml" rel="self" type="application/rss+xml"/>
-        ${posts.map((post) => `<item>
+        ${posts
+					.map(
+						(post) => `<item>
           <guid isPermaLink="true">${url}/blog/${post.slug}</guid>
           <title>${post.title}</title>
           <link>${url}/blog/${post.slug}</link>
           <description>${post.html}</description>
           <pubDate>${new Date(post.date).toUTCString()}</pubDate>
-          </item>`).join('')}
+          </item>`
+					)
+					.join('')}
     </channel>
   </rss>`;

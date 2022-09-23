@@ -6,7 +6,7 @@
 	export let name;
 	export let stroke;
 	export let strokeWidth;
-	
+
 	$: icon = feather.icons[name];
 	$: if (icon) {
 		if (stroke) icon.attrs['stroke'] = stroke;

@@ -9,19 +9,17 @@
 </script>
 
 <header class:sticky>
-	<div id="header">
-		{#if hamburger}
-			<Button class="menu" icon={open ? 'x' : 'menu'} on:click={() => (open = !open)} />
-		{/if}
-		<slot />
-		<div>
-			<nav>
-				{#each nav as link}
-					<Link class="button" href={link.href}>{link.title}</Link>
-				{/each}
-			</nav>
-			<slot name="utilities" />
-		</div>
+	{#if hamburger}
+		<Button class="menu" icon={open ? 'x' : 'menu'} on:click={() => (open = !open)} />
+	{/if}
+	<slot />
+	<div>
+		<nav>
+			{#each nav as link}
+				<Link class="button" href={link.href}>{link.title}</Link>
+			{/each}
+		</nav>
+		<slot name="utilities" />
 	</div>
 </header>
 
@@ -30,20 +28,13 @@
 {/if}
 
 <style>
-	#header {
-		width: inherit;
-		display: flex;
-		justify-content: space-between;
-		max-width: var(--max-width);
-	}
 	header {
-		background: var(--background);
-		width: 100%;
+		background-color: var(--background);
 		z-index: 9999;
 		padding: 0.5rem;
 		height: var(--header-height);
 		display: flex;
-		justify-content: space-around;
+		justify-content: space-between;
 	}
 	nav {
 		display: none;
@@ -59,7 +50,8 @@
 		z-index: 9999;
 	}
 	@media screen and (min-width: 1200px) {
-		#header {
+		header {
+			padding: 0 calc((100vw - var(--max-width)) / 2);
 			justify-content: flex-end;
 		}
 		nav {

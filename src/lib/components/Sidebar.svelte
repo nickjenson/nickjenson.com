@@ -32,7 +32,7 @@
 		color: var(--color);
 		background: var(--background);
 		position: fixed;
-		top: -100vh;
+		top: calc(-100vh - var(--header-height));
 		transition: top 0.3s ease-in-out;
 	}
 	nav {
