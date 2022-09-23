@@ -33,7 +33,7 @@
 		background: var(--background);
 		position: fixed;
 		top: calc(-100vh - var(--header-height));
-		transition: top 0.3s ease-in-out;
+		transition: top 0.1s ease-in-out;
 	}
 	nav {
 		padding: 2rem;
