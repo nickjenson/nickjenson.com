@@ -16,13 +16,6 @@
 </section>
 
 <style>
-	section div,
-	section h1 {
-		margin: 1rem;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-	}
 	img {
 		height: 10rem;
 		border-radius: 50%;
