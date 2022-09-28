@@ -16,6 +16,9 @@
 </section>
 
 <style>
+	section {
+		justify-items: center;	
+	}
 	img {
 		height: 10rem;
 		border-radius: 50%;
