@@ -16,8 +16,9 @@
 </section>
 
 <style>
-	section {
-		justify-items: center;	
+	section h1,
+	section div {
+		justify-content: center;	
 	}
 	img {
 		height: 10rem;
