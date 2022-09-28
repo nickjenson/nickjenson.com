@@ -101,6 +101,7 @@ blockquote {
 section {
 	display: flex;
 	justify-content: center;
+	flex-direction: column;
 	padding: 1.5rem 0;
 }
 
