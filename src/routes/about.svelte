@@ -18,6 +18,7 @@
 <style>
 	section h1,
 	section div {
+		display: flex;
 		justify-content: center;	
 	}
 	img {
