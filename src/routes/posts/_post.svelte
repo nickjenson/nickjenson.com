@@ -18,7 +18,7 @@
 	<slot />
 </div>
 {#if tags.length}
-	<h3><Icon name="tag"/>Tags</h3>
+	<h3><Icon name="tag" />Tags</h3>
 	<ul id="tags">
 		{#each tags as tag}
 			<li>
@@ -31,13 +31,13 @@
 <style>
 	h3 {
 		padding-top: 2rem;
-		border-top: 2px solid var(--border)
+		border-top: 2px solid var(--border);
 	}
 	#content {
-		padding: 2rem 0;
+		padding: 1rem 0;
 	}
 	#tags {
-		padding: .5rem;
+		padding: 0.5rem;
 		display: inline-flex;
 		list-style-type: none;
 		padding-inline-start: 0;

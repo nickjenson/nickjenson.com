@@ -3,10 +3,10 @@
 	export let disabled = false;
 	export let icon;
 	export let description;
-	
+
 	let className;
 	// required for export of `class`
-	export { className as class };	
+	export { className as class };
 </script>
 
 <button on:click {disabled} class={className} aria-label={description}>

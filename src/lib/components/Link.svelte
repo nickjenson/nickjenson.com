@@ -3,7 +3,7 @@
 	export let disabled = false;
 	export let href;
 	export let icon;
-	
+
 	let className;
 	// required for export of `class`
 	export { className as class };

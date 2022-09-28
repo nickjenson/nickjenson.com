@@ -32,8 +32,8 @@
 		color: var(--color);
 		background: var(--background);
 		position: fixed;
-		top: -100vh;
-		transition: top 0.3s ease-in-out;
+		top: calc(-100vh - var(--header-height));
+		transition: top 0.2s ease-in-out;
 	}
 	nav {
 		padding: 2rem;

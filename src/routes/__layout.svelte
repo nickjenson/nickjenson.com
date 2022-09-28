@@ -13,7 +13,7 @@
 	import Header from '$lib/components/Header.svelte';
 	import Footer from '$lib/components/Footer.svelte';
 	import Theme from '$lib/components/Theme.svelte';
-	
+
 	let nav = [
 		{ title: 'Home', href: '/' },
 		{ title: 'About', href: '/about' },
@@ -32,7 +32,7 @@
 <Footer />
 
 <style>
-	:global(body){
+	:global(body) {
 		display: flex;
 		flex-direction: column;
 	}
