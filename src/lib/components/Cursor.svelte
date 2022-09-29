@@ -18,7 +18,7 @@
 		}
 	}
 	$: char = typing ? last[index] : " "
-	$: typed = typing && () => setTimeout(type, 600);
+	$: typed = if(typing) return () => setTimeout(type, 600);
 	typed();
 </script>
 
