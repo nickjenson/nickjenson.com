@@ -1,12 +1,30 @@
 <script>
 	export let text;	
-	const first = text.slice(0, text.length - 1);
-	const last = text.slice(-1);
+	let offset = 3;
+	let index = 0;
+	let typing = true;
+	
+	const first = text.slice(0, text.length - offset);
+	const last = text.slice(-offset);
+	
+	function type() {
+		if (index < 	offset) {
+			first += last[offset];
+			index++;
+		} else {
+			typing = false;
+		}
+	}
+	
+	while(typing) {
+		setTimeout(type, 1000);
+	}
+	$: char = text[index] ?? " ";
 </script>
 
 <h1>
 	{first}
-	<span>{last}</span>
+	<span>{char}</span>
 </h1>
 
 <style>
