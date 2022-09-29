@@ -1,6 +1,6 @@
 <script>
 	export let text;	
-	const first = text.slice(1, text.length - 1);
+	const first = text.slice(0, text.length - 1);
 	const last = text.slice(-1);
 </script>
 
@@ -12,7 +12,6 @@
 <style>
 	h1 {
 		margin: 0;
-		margin-inline-start: -0.1em;
 	}
 	span {
 		border-radius: 1px;
