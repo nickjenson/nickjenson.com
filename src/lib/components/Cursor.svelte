@@ -16,10 +16,9 @@
 		}
 	}
 	
-	while(typing) {
-		setTimeout(type, 1000);
-	}
-	$: char = text[index] ?? " ";
+	
+	$: char = typing ? text[index] : " ";
+	(() => setTimeout(type, 600)();
 </script>
 
 <h1>
