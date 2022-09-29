@@ -3,21 +3,21 @@
 	let offset = 3;
 	let index = 0;
 	let typing = true;
+	let char = ""
 	
 	let first = text.slice(0, text.length - offset);
 	const last = text.slice(-offset);
 	
 	function type() {
 		if (index <= offset) {
-			first += last[offset];
+			char = last[index]	
+			first += last[index];
 			index++;
 		} else {
 			typing = false;
 		}
 	}
 	
-	
-	$: char = last[index] ?? " ";
 	const typed = () => setTimeout(type, 600);
 	typed();
 </script>
