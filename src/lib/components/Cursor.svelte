@@ -10,14 +10,14 @@
 	
 	function type() {
 		if (index <= offset) {
-			char = last[index]	
-			first += last[index];
+			char = last[index];	
+			first += char;
 			index++;
 		} else {
 			typing = false;
 		}
 	}
-	
+	$: char = typing ? last[index] : " "
 	const typed = () => setTimeout(type, 600);
 	typed();
 </script>
