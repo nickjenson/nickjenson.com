@@ -3,7 +3,6 @@
 	let offset = 3;
 	let index = 0;
 	let typing = true;
-	let char = ""
 	
 	let first = text.slice(0, text.length - offset);
 	const last = text.slice(-offset);
@@ -17,8 +16,8 @@
 			typing = false;
 		}
 	}
-	$: char = typing ? last[index] : " "
-	$: typed = if(typing) { return () => setTimeout(type, 600) };
+	$: char = typing ? last[index] : " ";
+	$: typed = typing ?	() => setTimeout(type, 600) : "";
 	typed();
 </script>
 
