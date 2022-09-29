@@ -1,28 +1,12 @@
 <script>
-	import Icon from './Icon.svelte';
-	export let text;
-
-	const arr = text.split("");
-
-	$: char = text[index];
-	$: typedChar = ""
-
-	let index = 0;
-
-	function type() {
-		if (index < text.length -1) {
-			typedChar += text[index]
-			index++;
-		}
-	}
-
-	const typing = () => setInterval(type, 500);
-	typing();
+	export let text;	
+	const first = text.slice(1, text.length - 1);
+	const last = text.slice(-1);
 </script>
 
 <h1>
-	<Icon name="box" height="1.8rem" width="1.2rem" />{typedChar}
-	<span>{char}</span>
+	{first}
+	<span>{last}</span>
 </h1>
 
 <style>
