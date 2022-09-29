@@ -89,7 +89,7 @@
 	}
 	#intro {
 		padding: 1rem;
-		width: calc(fit-content + 1rem);
+		min-width: fit-content;
 		margin: 0 auto;
 	}
 	:global(.hero-buttons a.button) {
