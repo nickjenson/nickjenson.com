@@ -22,7 +22,7 @@
 	--background: var(--dark-background);
 	--background-secondary: var(--dark-background-secondary);
 	--border: var(--dark-border);
-	--font: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Helvetica, sans-serif;
+	--font: 'Open Sans',	-apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica, sans-serif;
 	--font-mono: 'Fira Mono', monospace;
 }
 
