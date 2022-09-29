@@ -86,6 +86,7 @@
 	}
 	#articles {
 		width: 100%;
+		margin: 0 auto;
 	}
 	.columns {
 		width: 100%;
@@ -97,7 +98,7 @@
 	}
 	#intro {
 		padding: 1rem;
-		width: 16rem;
+		width: 17rem;
 		margin: 0 auto;
 	}
 	:global(.hero-buttons a.button) {
