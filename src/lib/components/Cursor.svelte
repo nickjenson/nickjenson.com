@@ -16,7 +16,7 @@
 	}
 	
 	$: char = index == offset ? " " : last[index];
-	const typed = setTimeout(type, 800);
+	const typed = () => setTimeout(type, 800);
 	typed();
 </script>
 
