@@ -8,16 +8,15 @@
 	const last = text.slice(-offset);
 	
 	function type() {
-		if (index < offset) { 
+		if (index <= offset) { 
 			char = last[index];
 			first += char;
 			index++;
-		} else {
-			typing = false;
 		}
 	}
-	$: char = typing ? last[index] : " ";
-	const typed = () => setTimeout(type, 600);
+	
+	$: char = index == offset ? " " : last[index];
+	const typed = setTimeout(type, 800);
 	typed();
 </script>
 
