@@ -12,6 +12,7 @@
 <style>
 	h1 {
 		margin: 0;
+		font-family: var(--font-mono);
 	}
 	span {
 		border-radius: 1px;
@@ -19,7 +20,7 @@
 		vertical-align: baseline;
 		color: var(--dark-text);
 		background-color: var(--dark-background);
-		animation: 1.2s blink step-end infinite;
+		animation: 1.6s blink step-end infinite;
 	}
 	@keyframes blink {
 		from,
