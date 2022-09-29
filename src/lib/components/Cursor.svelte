@@ -16,7 +16,7 @@
 		}
 	}
 
-	const typing = () => setInterval(type, 250);
+	const typing = () => setInterval(type, 500);
 	typing();
 </script>
 
@@ -29,7 +29,6 @@
 	h1 {
 		margin: 0;
 		margin-inline-start: -0.1em;
-		font-family: var(--font-mono);
 	}
 	span {
 		border-radius: 1px;
