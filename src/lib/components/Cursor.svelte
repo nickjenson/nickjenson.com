@@ -9,8 +9,8 @@
 	const last = text.slice(-offset);
 	
 	function type() {
-		if (index <= offset) {
-			char = last[index];	
+		if (index < offset) { 
+			char = last[index];
 			first += char;
 			index++;
 		} else {
@@ -18,7 +18,7 @@
 		}
 	}
 	$: char = typing ? last[index] : " "
-	const typed = () => setTimeout(type, 600);
+	$: typed = typing && () => setTimeout(type, 600);
 	typed();
 </script>
 
