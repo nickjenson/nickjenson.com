@@ -13,11 +13,16 @@
 </script>
 
 <script>
+	import { onMount } from 'svelte';
+	import { fly, fade } from "svelte/transition";
 	import Icon from '$lib/components/Icon.svelte';
 	import Link from '$lib/components/Link.svelte';
 	import Articles from '$lib/components/Articles.svelte';
 	import Cursor from '$lib/components/Cursor.svelte';
 	export let posts;
+	
+	let onload = false
+	onMount(() => onload = true)
 </script>
 
 <svelte:head>
@@ -26,13 +31,14 @@
 </svelte:head>
 
 <section id="hero">
-	<img id="memoji" src="/images/memoji.png" alt="Nick's Memoji" />
+	<img id="memoji"  src="/images/memoji.png" alt="Nick's Memoji" />
 	<div class="columns">
 		<div id="intro">
-			<h1>Nick Jenson <Cursor /></h1>
+			<Cursor text="Nick Jenson" />
 			<p><Icon name="briefcase" /> Canvas LMS @ Instructure</p>
 			<p><Icon name="map-pin" /> Portland, OR</p>
 		</div>
+	
 		<div class="hero-buttons">
 			<Link class="button primary" href="https://github.com/nickjenson" icon="github">
 				Follow on GitHub
@@ -44,17 +50,19 @@
 	</div>
 </section>
 
-<section>
-	<div id="articles">
-		<h2 class="border-bottom">Recent Articles</h2>
-		<Articles {posts} />
-	</div>
-</section>
+{#if onload}
+	<section in:fly={{delay: 100, y:50, duration: 300}}>
+		<div id="articles" in:fade={{duration: 300}}>
+			<h2 class="border-bottom">Recent Articles</h2>
+			<Articles {posts} />
+		</div>
+	</section>
+{/if}
 
 <style>
-	h1,
 	h2 {
 		margin: 0;
+		letter-spacing: 0;
 	}
 	p {
 		margin: 0.25em 0;
@@ -78,6 +86,7 @@
 	}
 	#articles {
 		width: 100%;
+		margin: 0 auto;
 	}
 	.columns {
 		width: 100%;
@@ -89,7 +98,7 @@
 	}
 	#intro {
 		padding: 1rem;
-		width: fit-content;
+		width: 17rem;
 		margin: 0 auto;
 	}
 	:global(.hero-buttons a.button) {

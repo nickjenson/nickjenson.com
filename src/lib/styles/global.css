@@ -178,6 +178,10 @@ p > code {
 	background-color: var(--code);
 }
 
+pre, code {
+	font-family: var(--font-mono);
+}
+
 pre > code {
 	background: transparent;
 	padding: 0;
