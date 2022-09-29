@@ -29,7 +29,7 @@
 	<img id="memoji" src="/images/memoji.png" alt="Nick's Memoji" />
 	<div class="columns">
 		<div id="intro">
-			<h1>Nick Jenson <Cursor /></h1>
+			<Cursor text="Nick Jenson" />
 			<p><Icon name="briefcase" /> Canvas LMS @ Instructure</p>
 			<p><Icon name="map-pin" /> Portland, OR</p>
 		</div>
@@ -52,9 +52,9 @@
 </section>
 
 <style>
-	h1,
 	h2 {
 		margin: 0;
+		letter-spacing: 0;
 	}
 	p {
 		margin: 0.25em 0;
@@ -89,7 +89,7 @@
 	}
 	#intro {
 		padding: 1rem;
-		width: fit-content;
+		width: 18rem;
 		margin: 0 auto;
 	}
 	:global(.hero-buttons a.button) {

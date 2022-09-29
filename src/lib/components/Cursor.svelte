@@ -1,29 +1,53 @@
-<span />
+<script>
+	import Icon from './Icon.svelte';
+	export let text;
+
+	const arr = text.split("");
+
+	$: char = text[index];
+	$: typedChar = ""
+
+	let index = 0;
+
+	function type() {
+		if (index < text.length -1) {
+			typedChar += text[index]
+			index++;
+		}
+	}
+
+	const typing = () => setInterval(type, 250);
+	typing();
+</script>
+
+<h1>
+	<Icon name="box" height="1.8rem" width="1.2rem" />{typedChar}
+	<span>{char}</span>
+</h1>
 
 <style>
+	h1 {
+		margin: 0;
+		margin-inline-start: -0.1em;
+		font-family: var(--font-mono);
+	}
 	span {
-		margin: 0 0.6rem;
-		padding: 0 0.4rem;
 		border-radius: 1px;
-		position: relative;
-		bottom: 2px;
+		position: absolute;
 		vertical-align: baseline;
+		color: var(--dark-text);
 		background-color: var(--dark-background);
-		font-size: 1.4rem;
-		animation: 1.6s blink step-end infinite;
+		animation: 1.2s blink step-end infinite;
 	}
 	@keyframes blink {
 		from,
 		to {
 			background-color: var(--dark-background);
+			color: var(--dark-text);
 		}
 		50% {
 			background-color: var(--light-background);
-		}
-	}
-	@media screen and (min-width: 1200px) {
-		span {
-			font-size: 1.6rem;
+			color: var(--light-text);
 		}
 	}
 </style>
