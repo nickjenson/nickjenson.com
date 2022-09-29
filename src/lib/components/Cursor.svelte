@@ -4,7 +4,7 @@
 	let index = 0;
 	let typing = true;
 	
-	const first = text.slice(0, text.length - offset);
+	let first = text.slice(0, text.length - offset);
 	const last = text.slice(-offset);
 	
 	function type() {
