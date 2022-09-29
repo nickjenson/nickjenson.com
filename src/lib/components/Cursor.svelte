@@ -18,7 +18,8 @@
 	
 	
 	$: char = typing ? text[index] : " ";
-	(() => setTimeout(type, 600)();
+	const typped = () => setTimeout(type, 600);
+	typped();
 </script>
 
 <h1>
