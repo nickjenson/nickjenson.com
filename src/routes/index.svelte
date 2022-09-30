@@ -69,7 +69,7 @@
 		color: var(--text);
 	}
 	#hero {
-		padding: 2rem 0;
+		padding: 2rem 0 1rem;
 		width: 100%;
 		display: flex;
 		flex-wrap: wrap;
@@ -98,7 +98,7 @@
 	}
 	#intro {
 		width: 17rem;
-		padding: 2.5rem 0 2.5rem 1rem;
+		padding: 2.5rem 0 3rem 1rem;
 		margin: 0 auto;
 	}
 	:global(.hero-buttons a.button) {
