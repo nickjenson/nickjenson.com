@@ -65,7 +65,7 @@
 		letter-spacing: 0;
 	}
 	p {
-		margin: 0.5em 0;
+		margin: 0.4em 0;
 		color: var(--text);
 	}
 	#hero {
