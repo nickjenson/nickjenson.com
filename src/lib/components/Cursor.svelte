@@ -7,7 +7,7 @@
 	let blink = false;
 	
 	let first = text.slice(0, text.length - offset);
-	const last = text.slice(-offset);
+	let last = text.slice(-offset);
 	
 	function type() {
 		if (index < offset) { 
@@ -20,21 +20,14 @@
 		}
 	}
 	
-	$: char = index == offset ? "" : last[index];
+	$: char = index == offset ? " " : last[index];
 	type();
-
-	
-
 </script>
 
 <h1>
 	{first}
-	<span class:blink >{@html char}</span>
+	<span class:blink>{char}</span>
 </h1>
-
-
-
-
 
 <style>
 	h1 {
@@ -52,7 +45,7 @@
 	span.blink {
 		height: 2rem;
 		margin: .2rem .5rem;
-		padding: 0 0.45rem;
+		padding: 0 0.5rem;
 		animation: 1.6s blink step-end infinite;
 	}
 	@keyframes blink {

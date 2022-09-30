@@ -65,11 +65,11 @@
 		letter-spacing: 0;
 	}
 	p {
-		margin: 0.25em 0;
+		margin: 0.4em 0;
 		color: var(--text);
 	}
 	#hero {
-		padding: 2rem 0;
+		padding: 2rem 0 1rem;
 		width: 100%;
 		display: flex;
 		flex-wrap: wrap;
@@ -97,8 +97,8 @@
 		align-self: center;
 	}
 	#intro {
-		padding: 1rem;
 		width: 17rem;
+		padding: 2.5rem 0 3rem 1rem;
 		margin: 0 auto;
 	}
 	:global(.hero-buttons a.button) {
@@ -106,8 +106,8 @@
 		padding: 0.5rem 1rem;
 	}
 	img {
-		height: 10rem;
 		width: 10rem;
+		height: 10rem;
 		border-radius: 50%;
 		border: 2px solid var(--border);
 	}
