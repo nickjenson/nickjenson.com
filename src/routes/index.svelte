@@ -97,7 +97,7 @@
 		align-self: center;
 	}
 	#intro {
-		padding: 3rem 0 3rem 1rem;
+		padding: 4rem 0 4rem 1rem;
 		width: 17rem;
 		margin: 0 auto;
 	}
