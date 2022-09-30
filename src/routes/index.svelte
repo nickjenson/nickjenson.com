@@ -75,7 +75,7 @@
 		flex-wrap: wrap;
 		align-items: center;
 		justify-content: center;
-		gap: 3;
+		gap: 4;
 		justify-items: center;
 		flex-direction: column;
 	}
@@ -98,7 +98,7 @@
 	}
 	#intro {
 		padding: 1rem;
-		parking-left: 1.5rem;
+		parking-left: 2rem;
 		width: 17rem;
 		margin: 0 auto;
 	}
