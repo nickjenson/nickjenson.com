@@ -1,3 +1,7 @@
+<script>
+	import Form from '$lib/components/Form.svelte';
+</script>
+
 <svelte:head>
 	<title>About | Nick Jenson</title>
 </svelte:head>
@@ -14,6 +18,8 @@
 		experimenting with new frameworks.
 	</p>
 </section>
+
+<Form />
 
 <style>
 	section h1,
