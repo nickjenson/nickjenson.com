@@ -98,6 +98,7 @@
 	}
 	#intro {
 		padding: 1rem;
+		parking-left: 1.5rem;
 		width: 17rem;
 		margin: 0 auto;
 	}
