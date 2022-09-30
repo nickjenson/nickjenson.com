@@ -20,18 +20,14 @@
 		}
 	}
 	
-	$: char = index == offset ? "&nbsp;" : last[index];
+	$: char = index == offset ? " " : last[index];
 	type();
 </script>
 
 <h1>
 	{first}
-	<span class:blink >{@html char}</span>
+	<span class:blink>{char}</span>
 </h1>
-
-
-
-
 
 <style>
 	h1 {
