@@ -75,7 +75,7 @@
 		flex-wrap: wrap;
 		align-items: center;
 		justify-content: center;
-		gap: 4;
+		gap: 6;
 		justify-items: center;
 		flex-direction: column;
 	}
