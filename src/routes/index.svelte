@@ -35,8 +35,8 @@
 	<div class="columns">
 		<div id="intro">
 			<Cursor text="Nick Jenson" />
-			<p><Icon name="briefcase" /> Canvas LMS @ Instructure</p>
-			<p><Icon name="map-pin" /> Portland, OR</p>
+			<p><Icon name="briefcase" />Data Sync @ Instructure</p>
+			<p><Icon name="map-pin" />Portland, OR</p>
 		</div>
 	
 		<div class="hero-buttons">
