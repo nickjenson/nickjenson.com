@@ -15,8 +15,6 @@
 		integrations and data interoperability at Instructure.</p>
 </section>
 
-<Form />
-
 <style>
 	section h1,
 	section div {
