@@ -14,6 +14,7 @@ html[theme='dark'] {
 	--background: var(--dark-background);
 	--border: var(--dark-border);
 	--code: var(--dark-code);
+	--hover: var(--dark-code);
 }
 
 html[theme='light'] {
@@ -22,6 +23,7 @@ html[theme='light'] {
 	--background: var(--light-background);
 	--border: var(--light-border);
 	--code: var(--light-code);
+	--hover: var(--light-code);
 }
 
 /* elements */

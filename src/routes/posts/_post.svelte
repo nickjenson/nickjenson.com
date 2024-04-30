@@ -5,6 +5,15 @@
 	export let desc;
 	export let date;
 	export let tags;
+
+	function formatDate(dateString) {
+		return new Date(dateString).toLocaleDateString('en-us', {
+			weekday: "long",
+			month: "short",
+			day: "numeric",
+			year: "numeric"
+		});
+	};
 </script>
 
 <svelte:head>
@@ -13,7 +22,7 @@
 </svelte:head>
 
 <h1>{title}</h1>
-<p>Published: {date}</p>
+<p>Published: {formatDate(date)}</p>
 <div id="content">
 	<slot />
 </div>

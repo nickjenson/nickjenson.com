@@ -35,8 +35,9 @@
 	<div class="columns">
 		<div id="intro">
 			<Cursor text="Nick Jenson" />
-			<p><Icon name="briefcase" />Data Sync @ Instructure</p>
-			<p><Icon name="map-pin" />Portland, OR</p>
+			<p id="title">Technical Product Manager</p>
+			<p><Icon name="briefcase" />&nbsp;Data Sync @ Instructure</p>
+			<p><Icon name="map-pin" />&nbsp;Portland, OR</p>
 		</div>
 	
 		<div class="hero-buttons">
@@ -78,6 +79,9 @@
 		gap: 3;
 		justify-items: center;
 		flex-direction: column;
+	}
+	#title {
+		font-weight: 600;
 	}
 	.hero-buttons {
 		width: 100%;
