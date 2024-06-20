@@ -1,7 +1,3 @@
-<script>
-	import Form from '$lib/components/Form.svelte';
-</script>
-
 <svelte:head>
 	<title>About | Nick Jenson</title>
 </svelte:head>
