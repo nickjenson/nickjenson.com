@@ -1,5 +1,13 @@
 <script>
 	export let posts;
+
+	function formatDate(dateString) {
+		return new Date(dateString).toLocaleDateString('en-us', {
+			weekday: "long",
+			month: "short",
+			day: "numeric"
+		});
+	};
 </script>
 
 {#each posts as post}
@@ -7,7 +15,7 @@
 		<a href={post.path}>
 			<div class="titlebar">
 				<h3>{post.meta.title}</h3>
-				<small>{post.meta.date}</small>
+				<small>{formatDate(post.meta.date)}</small>
 			</div>
 			<p>{post.meta.description}</p>
 			<small class="link">Read more &rarr;</small>
@@ -17,7 +25,7 @@
 
 <style>
 	.article {
-		padding: 0.5rem;
+		padding: 1rem;
 		border-radius: var(--radius);
 		margin: 0.5rem 0;
 	}

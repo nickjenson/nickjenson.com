@@ -2,28 +2,34 @@
 	<title>About | Nick Jenson</title>
 </svelte:head>
 
-<section>
+<section id="card">
 	<div>
 		<img id="memoji" src="/images/memoji.png" alt="Nick's Memoji" />
 	</div>
-	<h1>Hi, I'm Nick!</h1>
-	<p>
-		I’m an ambitious technical lead with years of experience working in the SaaS education
-		technology industry. My work focuses around data integrations with RESTful APIs, front-end
-		development, and project management. I enjoy developing tools, solving problems, and
-		experimenting with new frameworks.
-	</p>
+	<h1>Hi, I'm Nick! 👋</h1>
+	<p>I am a Technical Product Manager specializing in Student Information System (SIS) 
+		integrations and data interoperability at Instructure.</p>
 </section>
 
 <style>
 	section h1,
 	section div {
 		display: flex;
-		justify-content: center;	
+		justify-content: center;
+	}
+	#card {
+		padding: 2rem;
+		background: var(--code);
+		border-radius: var(--radius);
+		max-width: 24rem;
+		margin: auto;
+	}
+	#card p {
+		margin: 0;
 	}
 	img {
 		height: 10rem;
 		border-radius: 50%;
-		border: 2px solid var(--border);
+		border: 2px solid var(--radius);
 	}
 </style>
